@@ -1,0 +1,317 @@
+.frame {
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.frame :global(.panel-header) {
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.frame :global(.panel-title) {
+  max-width: none;
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.frame :global(.panel-body) {
+  flex: 1;
+  gap: 12px;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.frame :global(.panel-footer) {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.footerMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: rgba(227, 232, 239, 0.48);
+  font-size: 0.74rem;
+}
+
+.resultsHeader,
+.filterHeader,
+.rowTop,
+.rowFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.resultsEyebrow,
+.filterEyebrow,
+.filterGroupLabel {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.72);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.filterTitle {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.68);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.resultsCopyBlock,
+.filterStack,
+.filterHeaderMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.resultsCopyBlock {
+  gap: 0.18rem;
+}
+
+.resultsTitle {
+  margin: 0;
+  font-size: 0.96rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.emptyCopy {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.56);
+  line-height: 1.45;
+  font-size: 0.78rem;
+}
+
+.contextText {
+  color: rgba(145, 156, 171, 0.72);
+  font-size: 0.72rem;
+}
+
+.controlCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.filterStack,
+.filterHeaderMain {
+  gap: 6px;
+}
+
+.filterGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filterHeader {
+  justify-content: flex-end;
+  min-height: 0;
+}
+
+.filterButton:focus-visible,
+.clearButton:focus-visible,
+.rowButton:focus-visible,
+.emptyResetButton:focus-visible {
+  outline: 2px solid rgba(77, 163, 255, 0.72);
+  outline-offset: 2px;
+}
+
+.clearButton,
+.emptyResetButton {
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(77, 163, 255, 0.88);
+  cursor: pointer;
+  font-size: 0.72rem;
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+}
+
+.filterGroup {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 4px 10px;
+  align-items: start;
+}
+
+.filterButton {
+  appearance: none;
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba(227, 232, 239, 0.34);
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 160ms ease;
+}
+
+.filterButton:hover {
+  color: #e3e8ef;
+}
+
+.filterButtonActive {
+  color: #f5f7fb;
+}
+
+.contextRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.rowButton {
+  appearance: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  width: 100%;
+  padding: 0.66rem 0 0.66rem 0.82rem;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.rowButton:hover {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.rowSelected {
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.18), rgba(77, 163, 255, 0.05) 62%, transparent),
+    rgba(77, 163, 255, 0.05);
+  box-shadow: inset 0 0 0 1px rgba(77, 163, 255, 0.12);
+}
+
+.rowSelected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  bottom: 0.85rem;
+  width: 4px;
+  border-radius: 999px;
+  background: #4da3ff;
+}
+
+.rowIdentity,
+.rowRight {
+  display: flex;
+  gap: 0.65rem;
+  align-items: baseline;
+}
+
+.rowRight {
+  min-width: 3ch;
+  justify-content: flex-end;
+}
+
+.rowRank {
+  min-width: 1.8rem;
+  color: rgba(245, 247, 251, 0.96);
+  font-size: 1.08rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.rowName {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.scoreValue {
+  color: rgba(245, 247, 251, 0.96);
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  min-width: 3ch;
+  text-align: right;
+}
+
+.rowSelected .scoreValue {
+  color: #8fb7d8;
+}
+
+.rowMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 0 2.25rem;
+  color: rgba(145, 156, 171, 0.78);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.rowMetaValue {
+  white-space: nowrap;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.emptyTitle {
+  margin: 0;
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+@keyframes statusPulse {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1180px) {
+  .resultsHeader,
+  .rowTop,
+  .rowFooter {
+    flex-direction: column;
+  }
+}

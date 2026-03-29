@@ -1,0 +1,437 @@
+[
+  {
+    "regimeId": "regime-0",
+    "regimeLabel": "Fragile LEO constellation traffic",
+    "stability": {
+      "occurrences": 5,
+      "trialFrequency": 1.0,
+      "assessment": "robust"
+    },
+    "topDifferentiatingFeatures": [
+      {
+        "feature": "congestion_penalty",
+        "label": "Congestion penalty",
+        "group": "lane_pressure_traffic",
+        "provenance": "proxy",
+        "direction": "higher",
+        "deltaStd": 0.617,
+        "targetMean": 3.963,
+        "peerMean": 3.328
+      },
+      {
+        "feature": "owner_population",
+        "label": "Owner population",
+        "group": "mission_operator",
+        "provenance": "derived",
+        "direction": "higher",
+        "deltaStd": 0.567,
+        "targetMean": 11536.867,
+        "peerMean": 8875.268
+      },
+      {
+        "feature": "owner_share",
+        "label": "Owner share",
+        "group": "mission_operator",
+        "provenance": "derived",
+        "direction": "higher",
+        "deltaStd": 0.567,
+        "targetMean": 0.756,
+        "peerMean": 0.582
+      },
+      {
+        "feature": "orbit_population",
+        "label": "Orbit population",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "higher",
+        "deltaStd": 0.551,
+        "targetMean": 11671.0,
+        "peerMean": 9436.606
+      },
+      {
+        "feature": "orbit_share",
+        "label": "Orbit share",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "higher",
+        "deltaStd": 0.551,
+        "targetMean": 0.765,
+        "peerMean": 0.618
+      }
+    ],
+    "comparisonToPopulation": {
+      "averageScoreDelta": -1.07,
+      "dominantOrbit": "LEO",
+      "dominantMission": "communications_constellation"
+    },
+    "proxyRobustness": {
+      "persistsInOrbitalTrafficDebris": true,
+      "persistsWithoutMissionOperatorContext": true,
+      "persistsWithoutStewardshipProxies": true,
+      "persistsInDirectDerivedOnly": false
+    },
+    "interpretation": "This regime is defined by higher congestion penalty (0.6\u03c3), higher owner population (0.6\u03c3), and higher owner share (0.6\u03c3). That combination pulls hardest on congestion impact and leaves the group at 63.69/100 on average. It appears consistently across reruns. The pattern survives when the stewardship proxies are removed, but not when all proxy features are stripped away.",
+    "representativeSatellites": [
+      {
+        "satelliteId": "norad-57669",
+        "displayName": "STARLINK-30271"
+      },
+      {
+        "satelliteId": "norad-57681",
+        "displayName": "STARLINK-30273"
+      },
+      {
+        "satelliteId": "norad-57672",
+        "displayName": "STARLINK-30274"
+      }
+    ]
+  },
+  {
+    "regimeId": "regime-2",
+    "regimeLabel": "Fragile SSO constellation traffic",
+    "stability": {
+      "occurrences": 4,
+      "trialFrequency": 0.8,
+      "assessment": "robust"
+    },
+    "topDifferentiatingFeatures": [
+      {
+        "feature": "orbit_population",
+        "label": "Orbit population",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -1.639,
+        "targetMean": 2790.29,
+        "peerMean": 9436.606
+      },
+      {
+        "feature": "orbit_share",
+        "label": "Orbit share",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -1.639,
+        "targetMean": 0.183,
+        "peerMean": 0.618
+      },
+      {
+        "feature": "debris_shell_penalty",
+        "label": "Debris shell penalty",
+        "group": "debris_exposure",
+        "provenance": "derived",
+        "direction": "higher",
+        "deltaStd": 1.504,
+        "targetMean": 0.991,
+        "peerMean": 0.301
+      },
+      {
+        "feature": "shell_population",
+        "label": "Shell population",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -1.324,
+        "targetMean": 751.279,
+        "peerMean": 6426.374
+      },
+      {
+        "feature": "shell_share",
+        "label": "Shell share",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -1.324,
+        "targetMean": 0.049,
+        "peerMean": 0.421
+      }
+    ],
+    "comparisonToPopulation": {
+      "averageScoreDelta": 1.76,
+      "dominantOrbit": "SSO",
+      "dominantMission": "communications_constellation"
+    },
+    "proxyRobustness": {
+      "persistsInOrbitalTrafficDebris": false,
+      "persistsWithoutMissionOperatorContext": true,
+      "persistsWithoutStewardshipProxies": true,
+      "persistsInDirectDerivedOnly": false
+    },
+    "interpretation": "This regime is defined by lower orbit population (1.6\u03c3), lower orbit share (1.6\u03c3), and higher debris shell penalty (1.5\u03c3). That combination pulls hardest on debris exposure and leaves the group at 66.52/100 on average. It appears consistently across reruns. The pattern survives when the stewardship proxies are removed, but not when all proxy features are stripped away.",
+    "representativeSatellites": [
+      {
+        "satelliteId": "norad-62172",
+        "displayName": "STARLINK-32407"
+      },
+      {
+        "satelliteId": "norad-62167",
+        "displayName": "STARLINK-32506"
+      },
+      {
+        "satelliteId": "norad-62176",
+        "displayName": "STARLINK-32516"
+      }
+    ]
+  },
+  {
+    "regimeId": "regime-1",
+    "regimeLabel": "Fragile LEO crowding pressure",
+    "stability": {
+      "occurrences": 4,
+      "trialFrequency": 0.8,
+      "assessment": "robust"
+    },
+    "topDifferentiatingFeatures": [
+      {
+        "feature": "mission_complexity",
+        "label": "Mission complexity",
+        "group": "mission_operator",
+        "provenance": "proxy",
+        "direction": "higher",
+        "deltaStd": 1.572,
+        "targetMean": 3.108,
+        "peerMean": 2.266
+      },
+      {
+        "feature": "owner_population",
+        "label": "Owner population",
+        "group": "mission_operator",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -1.2,
+        "targetMean": 3238.909,
+        "peerMean": 8875.268
+      },
+      {
+        "feature": "owner_share",
+        "label": "Owner share",
+        "group": "mission_operator",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -1.2,
+        "targetMean": 0.212,
+        "peerMean": 0.582
+      },
+      {
+        "feature": "polar_penalty",
+        "label": "Polar penalty",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "higher",
+        "deltaStd": 0.852,
+        "targetMean": 1.325,
+        "peerMean": 0.585
+      },
+      {
+        "feature": "inclination_deg",
+        "label": "Inclination",
+        "group": "orbital_geometry",
+        "provenance": "direct",
+        "direction": "higher",
+        "deltaStd": 0.81,
+        "targetMean": 79.414,
+        "peerMean": 59.853
+      }
+    ],
+    "comparisonToPopulation": {
+      "averageScoreDelta": -3.47,
+      "dominantOrbit": "LEO",
+      "dominantMission": "other_mission"
+    },
+    "proxyRobustness": {
+      "persistsInOrbitalTrafficDebris": false,
+      "persistsWithoutMissionOperatorContext": false,
+      "persistsWithoutStewardshipProxies": true,
+      "persistsInDirectDerivedOnly": true
+    },
+    "interpretation": "This regime is defined by higher mission complexity (1.6\u03c3), lower owner population (1.2\u03c3), and lower owner share (1.2\u03c3). That combination pulls hardest on congestion impact and leaves the group at 61.29/100 on average. It appears consistently across reruns. The pattern still appears when the proxy-heavy features are removed.",
+    "representativeSatellites": [
+      {
+        "satelliteId": "norad-64624",
+        "displayName": "KESTREL-0A"
+      },
+      {
+        "satelliteId": "norad-64623",
+        "displayName": "HAWK-12A"
+      },
+      {
+        "satelliteId": "norad-64621",
+        "displayName": "HAWK-12C"
+      }
+    ]
+  },
+  {
+    "regimeId": "regime-3",
+    "regimeLabel": "Working GEO stewardship strain",
+    "stability": {
+      "occurrences": 3,
+      "trialFrequency": 0.6,
+      "assessment": "moderate"
+    },
+    "topDifferentiatingFeatures": [
+      {
+        "feature": "mean_motion_rev_per_day",
+        "label": "Mean motion",
+        "group": "orbital_geometry",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -3.878,
+        "targetMean": 1.338,
+        "peerMean": 14.236
+      },
+      {
+        "feature": "perigee_km",
+        "label": "Perigee",
+        "group": "orbital_geometry",
+        "provenance": "direct",
+        "direction": "higher",
+        "deltaStd": 3.768,
+        "targetMean": 30325.882,
+        "peerMean": 2264.398
+      },
+      {
+        "feature": "mean_altitude_km",
+        "label": "Mean altitude",
+        "group": "orbital_geometry",
+        "provenance": "direct",
+        "direction": "higher",
+        "deltaStd": 3.437,
+        "targetMean": 30404.743,
+        "peerMean": 2381.776
+      },
+      {
+        "feature": "apogee_km",
+        "label": "Apogee",
+        "group": "orbital_geometry",
+        "provenance": "direct",
+        "direction": "higher",
+        "deltaStd": 2.947,
+        "targetMean": 30483.604,
+        "peerMean": 2499.154
+      },
+      {
+        "feature": "end_of_life_orbit_bonus",
+        "label": "End-of-life orbit bonus",
+        "group": "stewardship_sustainability",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -2.86,
+        "targetMean": -0.095,
+        "peerMean": 1.693
+      }
+    ],
+    "comparisonToPopulation": {
+      "averageScoreDelta": 14.87,
+      "dominantOrbit": "GEO",
+      "dominantMission": "communications_platform"
+    },
+    "proxyRobustness": {
+      "persistsInOrbitalTrafficDebris": false,
+      "persistsWithoutMissionOperatorContext": false,
+      "persistsWithoutStewardshipProxies": false,
+      "persistsInDirectDerivedOnly": false
+    },
+    "interpretation": "This regime is defined by lower mean motion (3.9\u03c3), higher perigee (3.8\u03c3), and higher mean altitude (3.4\u03c3). That combination pulls hardest on sustainability and leaves the group at 79.63/100 on average. It shows up often, but not in every rerun. The pattern weakens once the proxy-heavy inputs are removed, so it should be read cautiously.",
+    "representativeSatellites": [
+      {
+        "satelliteId": "norad-39360",
+        "displayName": "FM-6"
+      },
+      {
+        "satelliteId": "norad-39206",
+        "displayName": "MUOS-2"
+      },
+      {
+        "satelliteId": "norad-38551",
+        "displayName": "ECHOSTAR 17"
+      }
+    ]
+  },
+  {
+    "regimeId": "regime-4",
+    "regimeLabel": "Fragile Cross-orbit debris pressure",
+    "stability": {
+      "occurrences": 4,
+      "trialFrequency": 0.8,
+      "assessment": "robust"
+    },
+    "topDifferentiatingFeatures": [
+      {
+        "feature": "eccentricity",
+        "label": "Eccentricity",
+        "group": "orbital_geometry",
+        "provenance": "derived",
+        "direction": "higher",
+        "deltaStd": 14.935,
+        "targetMean": 0.606,
+        "peerMean": 0.003
+      },
+      {
+        "feature": "altitude_span_km",
+        "label": "Altitude span",
+        "group": "orbital_geometry",
+        "provenance": "direct",
+        "direction": "higher",
+        "deltaStd": 11.385,
+        "targetMean": 57690.759,
+        "peerMean": 234.756
+      },
+      {
+        "feature": "shell_density_percentile",
+        "label": "Shell density",
+        "group": "lane_pressure_traffic",
+        "provenance": "derived",
+        "direction": "lower",
+        "deltaStd": -8.362,
+        "targetMean": 0.422,
+        "peerMean": 0.975
+      },
+      {
+        "feature": "apogee_km",
+        "label": "Apogee",
+        "group": "orbital_geometry",
+        "provenance": "direct",
+        "direction": "higher",
+        "deltaStd": 6.682,
+        "targetMean": 65956.448,
+        "peerMean": 2499.154
+      },
+      {
+        "feature": "period_minutes",
+        "label": "Orbital period",
+        "group": "orbital_geometry",
+        "provenance": "direct",
+        "direction": "higher",
+        "deltaStd": 4.914,
+        "targetMean": 2018.236,
+        "peerMean": 165.781
+      }
+    ],
+    "comparisonToPopulation": {
+      "averageScoreDelta": -3.57,
+      "dominantOrbit": "HEO",
+      "dominantMission": "other_mission"
+    },
+    "proxyRobustness": {
+      "persistsInOrbitalTrafficDebris": false,
+      "persistsWithoutMissionOperatorContext": true,
+      "persistsWithoutStewardshipProxies": false,
+      "persistsInDirectDerivedOnly": false
+    },
+    "interpretation": "This regime is defined by higher eccentricity (14.9\u03c3), higher altitude span (11.4\u03c3), and lower shell density (8.4\u03c3). That combination pulls hardest on debris exposure and leaves the group at 61.19/100 on average. It appears consistently across reruns. The pattern weakens once the proxy-heavy inputs are removed, so it should be read cautiously.",
+    "representativeSatellites": [
+      {
+        "satelliteId": "norad-44552",
+        "displayName": "COSMOS 2541"
+      },
+      {
+        "satelliteId": "norad-45608",
+        "displayName": "COSMOS 2546"
+      },
+      {
+        "satelliteId": "norad-42719",
+        "displayName": "COSMOS 2518"
+      }
+    ]
+  }
+]

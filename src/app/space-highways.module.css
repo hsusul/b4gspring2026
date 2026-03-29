@@ -1,0 +1,1046 @@
+.page {
+  position: relative;
+  height: 100svh;
+  overflow-y: auto;
+  scroll-snap-type: y proximity;
+  scroll-padding-block: 24px;
+  scrollbar-gutter: stable;
+  background:
+    radial-gradient(circle at top, rgba(77, 163, 255, 0.12), transparent 26%),
+    radial-gradient(circle at 14% 20%, rgba(77, 163, 255, 0.08), transparent 18%),
+    linear-gradient(180deg, #060b12 0%, #0b0f14 22%, #08111b 100%);
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(77, 163, 255, 0.06), transparent 28%),
+    radial-gradient(circle at 50% 84%, rgba(0, 0, 0, 0.28), transparent 36%),
+    linear-gradient(
+      90deg,
+      transparent 0,
+      transparent calc(50% - 1px),
+      rgba(255, 255, 255, 0.025) calc(50% - 1px),
+      rgba(255, 255, 255, 0.025) calc(50% + 1px),
+      transparent calc(50% + 1px),
+      transparent 100%
+    );
+  opacity: 0.48;
+}
+
+.page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.16) 0.7px, transparent 1px),
+    radial-gradient(circle, rgba(125, 152, 179, 0.14) 0.8px, transparent 1.1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 0.6px, transparent 0.9px);
+  background-position:
+    0 0,
+    110px 160px,
+    220px 90px;
+  background-size:
+    260px 260px,
+    360px 360px,
+    420px 420px;
+  opacity: 0.18;
+  mix-blend-mode: screen;
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(1320px, calc(100% - 48px));
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 96px 0;
+  scroll-snap-align: start;
+}
+
+.heroSection {
+  display: flex;
+  min-height: 100svh;
+  align-items: flex-end;
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+
+.heroStack,
+.sectionIntro,
+.globeNarrativeCopy,
+.interpretationNarrative,
+.closingCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroStack {
+  gap: 24px;
+  max-width: 880px;
+}
+
+.kicker,
+.sectionLabel,
+.storyScoreLabel,
+.comparisonLabel,
+.modeLabel,
+.selectedContextLabel,
+.translationLabel,
+.laneEyebrow {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.76);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heroTitle,
+.sectionTitle,
+.closingTitle,
+.modeTitle,
+.storyScoreName,
+.laneTitle {
+  margin: 0;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.heroTitle {
+  font-size: clamp(4rem, 12vw, 8rem);
+  max-width: 11ch;
+}
+
+.heroSubtitle,
+.sectionCopy,
+.laneLead,
+.laneText,
+.translationCopy,
+.findingCopy,
+.closingCopy,
+.modeCopy,
+.selectedContextCopy,
+.comparisonCopy {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.78);
+  line-height: 1.6;
+}
+
+.heroSubtitle {
+  max-width: 42rem;
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
+}
+
+.heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  color: rgba(227, 232, 239, 0.64);
+  font-size: 0.92rem;
+}
+
+.sectionIntro {
+  gap: 16px;
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: clamp(2.25rem, 5vw, 4.2rem);
+  max-width: 13ch;
+}
+
+.modeRail,
+.exampleRail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.modeRail {
+  margin-bottom: 24px;
+}
+
+.modeButton,
+.exampleButton,
+.laneButton {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: rgba(145, 156, 171, 0.78);
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.modeButton {
+  padding: 0 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.modeButton:hover,
+.laneButton:hover {
+  color: rgba(245, 247, 251, 0.92);
+}
+
+.modeButtonActive {
+  color: #f5f7fb;
+  border-color: rgba(77, 163, 255, 0.72);
+}
+
+.globeSection {
+  padding-top: 32px;
+}
+
+.globeWell {
+  overflow: hidden;
+  min-height: 640px;
+  height: min(78vh, 820px);
+  border-radius: 24px;
+}
+
+.globeWell :global(.globe-dashboard-panel) {
+  height: 100%;
+  min-height: 100%;
+}
+
+.globeWell :global(.globe-stage) {
+  height: 100%;
+  min-height: 100%;
+  border: 0;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(77, 163, 255, 0.1), transparent 38%),
+    radial-gradient(circle at 18% 16%, rgba(77, 163, 255, 0.08), transparent 18%),
+    linear-gradient(180deg, rgba(3, 10, 17, 0.98), rgba(4, 11, 20, 0.98));
+}
+
+.globeWell :global(.globe-stage-live::before) {
+  background:
+    radial-gradient(circle at center, rgba(77, 163, 255, 0.04), transparent 48%),
+    radial-gradient(circle at center, transparent 58%, rgba(2, 8, 20, 0.16) 100%);
+}
+
+.globeWell :global(.globe-stage-live::after) {
+  background: none;
+}
+
+.globeWell :global(.globe-attribution-corner) {
+  right: 14px;
+  bottom: 12px;
+  color: rgba(145, 156, 171, 0.34);
+}
+
+.globeNarrativeGrid,
+.interpretationGrid,
+.findingsGrid {
+  display: grid;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.globeNarrativeGrid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  align-items: start;
+}
+
+.globeNarrativeCopy {
+  gap: 16px;
+}
+
+.modeTitle {
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  max-width: 14ch;
+}
+
+.selectedContext,
+.modeCard,
+.modeDetail,
+.laneCard,
+.storyScoreCard,
+.comparisonPanel,
+.closingCard {
+  background: rgba(17, 22, 28, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.selectedContext,
+.storyScoreCard,
+.comparisonPanel,
+.closingCard {
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.selectedContext {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 36rem;
+}
+
+.selectedContextTitle,
+.modeCardValue,
+.comparisonOrbit,
+.storyScoreRisk,
+.storyScoreValue {
+  margin: 0;
+}
+
+.selectedContextTitle,
+.laneLead {
+  color: #f5f7fb;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.modeDetails,
+.translationPoints,
+.comparisonRows {
+  display: flex;
+  flex-direction: column;
+}
+
+.modeDetails {
+  gap: 12px;
+}
+
+.modeCard {
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.modeCardValue {
+  color: #f5f7fb;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.modeCardLabel,
+.modeDetailCopy,
+.storyScoreMeta,
+.storyScoreRank,
+.comparisonMeta,
+.footerNote {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.8);
+  line-height: 1.5;
+}
+
+.modeDetail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+  border-radius: 18px;
+  padding: 18px 20px;
+}
+
+.modeDetailTitle {
+  margin: 0 0 6px;
+  color: #f5f7fb;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.modeDetailMeta {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.7);
+  font-size: 0.84rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.laneGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.laneCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.laneHeader,
+.storyScoreHeader,
+.comparisonHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.laneTitle {
+  font-size: 1.8rem;
+}
+
+.laneText {
+  color: rgba(227, 232, 239, 0.72);
+}
+
+.laneFacts {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+}
+
+.laneFacts dt {
+  margin: 0 0 6px;
+  color: rgba(145, 156, 171, 0.82);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.laneFacts dd {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.76);
+  line-height: 1.55;
+}
+
+.laneButton {
+  align-self: flex-start;
+  padding: 0;
+  color: rgba(77, 163, 255, 0.88);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.interpretationGrid {
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  align-items: start;
+}
+
+.interpretationNarrative {
+  gap: 24px;
+}
+
+.interpretationLead {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.88);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.exampleButton {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  min-width: 160px;
+  text-align: left;
+}
+
+.exampleButton:hover {
+  color: rgba(245, 247, 251, 0.9);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.exampleButtonActive {
+  color: #f5f7fb;
+  border-color: rgba(77, 163, 255, 0.44);
+  background: rgba(77, 163, 255, 0.08);
+}
+
+.exampleButtonOrbit {
+  color: rgba(145, 156, 171, 0.78);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.exampleButtonName {
+  color: inherit;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.signalDecoder {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.signalDecoderRow {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.signalDecoderRow:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.signalIndex {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.64);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.signalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.signalTerm {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.92);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.signalDescription {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.signalEdges {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.signalEdge {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.signalEdgeLabel {
+  color: rgba(145, 156, 171, 0.72);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.signalEdgeCopy {
+  color: rgba(227, 232, 239, 0.68);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.storyScoreCard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.storyScoreName {
+  font-size: 2rem;
+}
+
+.storyScoreHero {
+  display: flex;
+  gap: 16px 24px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.storyScoreValue {
+  color: color-mix(in srgb, var(--story-accent) 78%, #f5f7fb);
+  font-size: clamp(4.8rem, 8vw, 6.6rem);
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 0.88;
+}
+
+.storyScoreValue span {
+  color: rgba(245, 247, 251, 0.38);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-left: 6px;
+}
+
+.storyScoreHeroCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 12px;
+}
+
+.storyScoreRisk {
+  color: color-mix(in srgb, var(--story-accent) 88%, #f5f7fb);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.storyScoreSummary {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.8);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 48ch;
+}
+
+.storyScoreBreakdown {
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.findingsGrid {
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  align-items: start;
+}
+
+.findingList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.finding {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.finding:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.findingIndex {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.62);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.comparisonPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comparisonRows {
+  gap: 16px;
+}
+
+.comparisonRow {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.62fr) minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.comparisonOrbit {
+  color: #f5f7fb;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.comparisonBar {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.comparisonBarFill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #7d98b3;
+}
+
+.comparisonBarFill[data-tone="moderate"] {
+  background: #f2a443;
+}
+
+.comparisonBarFill[data-tone="high"] {
+  background: #ff7558;
+}
+
+.comparisonScore {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.researchConclusionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.researchBeatCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.researchHighlightTitle,
+.researchGroupLabel,
+.outlierStripLabel {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.researchHighlightBody,
+.researchMeta,
+.researchValidationLine,
+.researchModelLine,
+.researchRegimeCopy,
+.researchRegimeReps,
+.researchGroupCopy,
+.outlierReason {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.researchClaimList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.researchClaimItem,
+.outlierIntro {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.78);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.researchValidationLine {
+  max-width: 64ch;
+}
+
+.researchModelLine {
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.researchRegimeLead {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 46rem;
+  margin-bottom: 56px;
+}
+
+.researchRegimeLeadTitle {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: clamp(1.95rem, 4vw, 3.2rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  max-width: 15ch;
+}
+
+.researchRegimeLeadCopy {
+  margin: 0;
+  max-width: 39rem;
+  color: rgba(227, 232, 239, 0.76);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.researchRegimeChapter {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.researchRegimeGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.researchGroupIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 34rem;
+}
+
+.researchGroupHeading {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.researchRegimeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px 20px;
+  align-items: start;
+}
+
+.outlierStripRows {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.researchRegimeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.researchRegimeCard[data-variant="qualified"] {
+  opacity: 0.94;
+  border-top-color: rgba(255, 255, 255, 0.04);
+}
+
+.researchRegimeMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.researchRegimeLabel,
+.researchRegimeCount,
+.outlierMeta {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.72);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.researchRegimeTitle,
+.outlierName {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.researchRegimeStats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 20px;
+}
+
+.researchRegimeMetric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.researchRegimeMetric dt {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.72);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.researchRegimeMetric dd {
+  margin: 0;
+  color: #f5f7fb;
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.researchRegimeReps {
+  color: rgba(145, 156, 171, 0.8);
+  font-size: 0.84rem;
+}
+
+.researchRegimeDivider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+}
+
+.outlierStrip {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.outlierStripRows {
+  gap: 16px;
+}
+
+.outlierCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.closingSection {
+  min-height: 80svh;
+  padding-top: 64px;
+  padding-bottom: 104px;
+}
+
+.closingCard {
+  gap: 16px;
+}
+
+.closingTitle {
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  max-width: 13ch;
+}
+
+.footerNote {
+  max-width: 42rem;
+  font-size: 0.84rem;
+}
+
+@keyframes chapterReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.heroStack,
+.sectionIntro,
+.researchRegimeLead,
+.globeWell,
+.globeNarrativeGrid,
+.laneGrid,
+.interpretationGrid,
+.findingsGrid,
+.researchConclusionGrid,
+.researchRegimeChapter,
+.outlierStrip,
+.closingCard {
+  animation: chapterReveal 640ms ease both;
+}
+
+@media (max-width: 1100px) {
+  .globeNarrativeGrid,
+  .interpretationGrid,
+  .findingsGrid,
+  .laneGrid,
+  .researchConclusionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .outlierStripRows {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .globeWell {
+    min-height: 540px;
+    height: 68vh;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    width: min(100%, calc(100% - 32px));
+    min-height: auto;
+    padding: 72px 0;
+  }
+
+  .heroSection {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .heroStack {
+    gap: 20px;
+  }
+
+  .globeWell {
+    min-height: 420px;
+    height: 56vh;
+  }
+
+  .selectedContext,
+  .storyScoreCard,
+  .comparisonPanel,
+  .closingCard,
+  .laneCard,
+  .modeCard,
+  .modeDetail {
+    padding: 20px;
+  }
+
+  .comparisonRow {
+    grid-template-columns: 1fr;
+  }
+
+  .researchRegimeLead {
+    margin-bottom: 40px;
+  }
+
+  .researchRegimeStats,
+  .researchConclusionGrid,
+  .researchRegimeGrid,
+  .outlierStripRows {
+    grid-template-columns: 1fr;
+  }
+
+  .signalDecoderRow,
+  .signalEdges {
+    grid-template-columns: 1fr;
+  }
+}

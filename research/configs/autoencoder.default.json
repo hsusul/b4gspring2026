@@ -1,0 +1,15 @@
+{
+  "seed": 7,
+  "latent_dim": 8,
+  "hidden_dims": [64, 32],
+  "epochs": 80,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "validation_fraction": 0.25,
+  "test_fraction": 0.25,
+  "cluster_count": 5,
+  "min_cluster_count": 3,
+  "max_cluster_count": 6,
+  "min_category_frequency": 25
+}

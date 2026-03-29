@@ -1,0 +1,1407 @@
+{
+  "globalOutliers": [
+    {
+      "satelliteId": "norad-33401",
+      "displayName": "IBEX",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher altitude span (53.2\u03c3) and higher orbital period (34.4\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 1.118489,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 53.192,
+          "targetMean": 268674.0,
+          "peerMean": 234.756
+        },
+        {
+          "feature": "period_minutes",
+          "label": "Orbital period",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 34.445,
+          "targetMean": 13151.04,
+          "peerMean": 165.781
+        },
+        {
+          "feature": "apogee_km",
+          "label": "Apogee",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 32.644,
+          "targetMean": 312517.0,
+          "peerMean": 2499.154
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-27704",
+      "displayName": "NAVSTAR 52 (USA 168)",
+      "orbitClass": "MEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows lower shell density (14.5\u03c3) and higher operator discipline (5.8\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 1.027518,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -14.522,
+          "targetMean": 0.014,
+          "peerMean": 0.975
+        },
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.835,
+          "targetMean": 4.0,
+          "peerMean": 3.014
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 4.927,
+          "targetMean": 7.0,
+          "peerMean": 1.474
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-28129",
+      "displayName": "NAVSTAR 53 (USA 175)",
+      "orbitClass": "MEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows lower shell density (14.5\u03c3) and higher operator discipline (5.8\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.978116,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -14.522,
+          "targetMean": 0.014,
+          "peerMean": 0.975
+        },
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.835,
+          "targetMean": 4.0,
+          "peerMean": 3.014
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 5.818,
+          "targetMean": 8.0,
+          "peerMean": 1.474
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-40889",
+      "displayName": "GSAT0205 (GALILEO 9)",
+      "orbitClass": "MEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows lower shell density (14.5\u03c3) and higher shell rank (6.7\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.782029,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -14.522,
+          "targetMean": 0.014,
+          "peerMean": 0.975
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 6.71,
+          "targetMean": 9.0,
+          "peerMean": 1.474
+        },
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.835,
+          "targetMean": 4.0,
+          "peerMean": 3.014
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-25989",
+      "displayName": "XMM-NEWTON",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows lower shell density (14.5\u03c3) and higher shell rank (13.8\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.732495,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -14.522,
+          "targetMean": 0.014,
+          "peerMean": 0.975
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 13.842,
+          "targetMean": 17.0,
+          "peerMean": 1.474
+        },
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 12.426,
+          "targetMean": 62945.0,
+          "peerMean": 234.756
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-57770",
+      "displayName": "CHANDRAYAAN-3 PROPULSION MODULE",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher orbital period (46.0\u03c3) and higher altitude span (36.2\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.547523,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "period_minutes",
+          "label": "Orbital period",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 45.984,
+          "targetMean": 17501.16,
+          "peerMean": 165.781
+        },
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 36.205,
+          "targetMean": 182950.0,
+          "peerMean": 234.756
+        },
+        {
+          "feature": "apogee_km",
+          "label": "Apogee",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 32.209,
+          "targetMean": 308388.0,
+          "peerMean": 2499.154
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-26464",
+      "displayName": "CLUSTER II-FM8 (TANGO)",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher altitude span (25.7\u03c3) and higher eccentricity (22.1\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.524502,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 25.716,
+          "targetMean": 130015.0,
+          "peerMean": 234.756
+        },
+        {
+          "feature": "eccentricity",
+          "label": "Eccentricity",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 22.119,
+          "targetMean": 0.896,
+          "peerMean": 0.003
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 15.625,
+          "targetMean": 19.0,
+          "peerMean": 1.474
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-43435",
+      "displayName": "TESS",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher orbital period (51.8\u03c3) and higher altitude span (43.8\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.522213,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "period_minutes",
+          "label": "Orbital period",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 51.779,
+          "targetMean": 19685.74,
+          "peerMean": 165.781
+        },
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 43.755,
+          "targetMean": 221050.0,
+          "peerMean": 234.756
+        },
+        {
+          "feature": "apogee_km",
+          "label": "Apogee",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 36.133,
+          "targetMean": 345653.0,
+          "peerMean": 2499.154
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-35491",
+      "displayName": "GOES 14",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows higher operator discipline (5.8\u03c3) and higher perigee (4.5\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.48111,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.835,
+          "targetMean": 4.0,
+          "peerMean": 3.014
+        },
+        {
+          "feature": "perigee_km",
+          "label": "Perigee",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 4.507,
+          "targetMean": 35825.0,
+          "peerMean": 2264.398
+        },
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -4.226,
+          "targetMean": 0.696,
+          "peerMean": 0.975
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-26410",
+      "displayName": "CLUSTER II-FM7 (SAMBA)",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher altitude span (25.5\u03c3) and higher eccentricity (22.1\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.478219,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 25.541,
+          "targetMean": 129130.0,
+          "peerMean": 234.756
+        },
+        {
+          "feature": "eccentricity",
+          "label": "Eccentricity",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 22.103,
+          "targetMean": 0.895,
+          "peerMean": 0.003
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 14.734,
+          "targetMean": 18.0,
+          "peerMean": 1.474
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-32060",
+      "displayName": "WORLDVIEW-1 (WV-1)",
+      "orbitClass": "LEO",
+      "vulnerabilityRegimeId": "regime-1",
+      "reason": "Unusual because it shows higher operator discipline (5.8\u03c3) and lower launch year (3.5\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.465307,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.835,
+          "targetMean": 4.0,
+          "peerMean": 3.014
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -3.527,
+          "targetMean": 2007.0,
+          "peerMean": 2022.522
+        },
+        {
+          "feature": "launch_age_years",
+          "label": "Launch age",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 3.527,
+          "targetMean": 19.24,
+          "peerMean": 3.718
+        }
+      ]
+    },
+    {
+      "satelliteId": "aqua",
+      "displayName": "Aqua",
+      "orbitClass": "SSO",
+      "vulnerabilityRegimeId": "regime-2",
+      "reason": "Unusual because it shows higher operator discipline (5.8\u03c3) and lower launch year (4.7\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.416064,
+      "withinPeerGroup": "population",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.835,
+          "targetMean": 4.0,
+          "peerMean": 3.014
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -4.663,
+          "targetMean": 2002.0,
+          "peerMean": 2022.522
+        },
+        {
+          "feature": "launch_age_years",
+          "label": "Launch age",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 4.663,
+          "targetMean": 24.24,
+          "peerMean": 3.718
+        }
+      ]
+    }
+  ],
+  "withinRegimeOutliers": [
+    {
+      "satelliteId": "norad-33401",
+      "displayName": "IBEX",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher altitude span (3.6\u03c3) and higher apogee (3.3\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 1.118489,
+      "withinPeerGroup": "regime z-score 4.59",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 3.637,
+          "targetMean": 268674.0,
+          "peerMean": 57690.759
+        },
+        {
+          "feature": "apogee_km",
+          "label": "Apogee",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 3.314,
+          "targetMean": 312517.0,
+          "peerMean": 65956.448
+        },
+        {
+          "feature": "mean_altitude_km",
+          "label": "Mean altitude",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 3.012,
+          "targetMean": 178180.0,
+          "peerMean": 37111.069
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-27704",
+      "displayName": "NAVSTAR 52 (USA 168)",
+      "orbitClass": "MEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows lower shell density (6.2\u03c3) and higher shell rank (3.0\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 1.027518,
+      "withinPeerGroup": "regime z-score 15.39",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -6.241,
+          "targetMean": 0.014,
+          "peerMean": 0.886
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 2.975,
+          "targetMean": 7.0,
+          "peerMean": 1.691
+        },
+        {
+          "feature": "latitude_span_deg",
+          "label": "Latitude span",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 1.858,
+          "targetMean": 109.72,
+          "peerMean": 25.942
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-28129",
+      "displayName": "NAVSTAR 53 (USA 175)",
+      "orbitClass": "MEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows lower shell density (6.2\u03c3) and higher shell rank (3.5\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.978116,
+      "withinPeerGroup": "regime z-score 14.63",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -6.241,
+          "targetMean": 0.014,
+          "peerMean": 0.886
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 3.535,
+          "targetMean": 8.0,
+          "peerMean": 1.691
+        },
+        {
+          "feature": "latitude_span_deg",
+          "label": "Latitude span",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 1.863,
+          "targetMean": 109.96,
+          "peerMean": 25.942
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-25989",
+      "displayName": "XMM-NEWTON",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher shell rank (1.9\u03c3) and lower debris penalty (1.5\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.732495,
+      "withinPeerGroup": "regime z-score 2.70",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 1.859,
+          "targetMean": 17.0,
+          "peerMean": 6.31
+        },
+        {
+          "feature": "debris_penalty",
+          "label": "Debris penalty",
+          "group": "debris_exposure",
+          "provenance": "proxy",
+          "direction": "lower",
+          "deltaStd": -1.473,
+          "targetMean": 0.0,
+          "peerMean": 0.776
+        },
+        {
+          "feature": "mission_complexity",
+          "label": "Mission complexity",
+          "group": "mission_operator",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 1.353,
+          "targetMean": 4.0,
+          "peerMean": 2.966
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-32060",
+      "displayName": "WORLDVIEW-1 (WV-1)",
+      "orbitClass": "LEO",
+      "vulnerabilityRegimeId": "regime-1",
+      "reason": "Unusual because it shows higher operator discipline (4.4\u03c3) and lower launch year (2.8\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.465307,
+      "withinPeerGroup": "regime z-score 21.41",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 4.351,
+          "targetMean": 4.0,
+          "peerMean": 3.019
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -2.83,
+          "targetMean": 2007.0,
+          "peerMean": 2021.976
+        },
+        {
+          "feature": "launch_age_years",
+          "label": "Launch age",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 2.83,
+          "targetMean": 19.24,
+          "peerMean": 4.264
+        }
+      ]
+    },
+    {
+      "satelliteId": "aqua",
+      "displayName": "Aqua",
+      "orbitClass": "SSO",
+      "vulnerabilityRegimeId": "regime-2",
+      "reason": "Unusual because it shows higher operator discipline (5.6\u03c3) and lower launch year (3.8\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.416064,
+      "withinPeerGroup": "regime z-score 18.26",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.591,
+          "targetMean": 4.0,
+          "peerMean": 3.017
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -3.764,
+          "targetMean": 2002.0,
+          "peerMean": 2021.433
+        },
+        {
+          "feature": "launch_age_years",
+          "label": "Launch age",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 3.764,
+          "targetMean": 24.24,
+          "peerMean": 4.807
+        }
+      ]
+    },
+    {
+      "satelliteId": "landsat8",
+      "displayName": "Landsat 8",
+      "orbitClass": "SSO",
+      "vulnerabilityRegimeId": "regime-2",
+      "reason": "Unusual because it shows higher operator discipline (11.3\u03c3) and higher sustainability commitment (2.6\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.399339,
+      "withinPeerGroup": "regime z-score 17.51",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 11.276,
+          "targetMean": 5.0,
+          "peerMean": 3.017
+        },
+        {
+          "feature": "sustainability_commitment",
+          "label": "Sustainability commitment",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 2.559,
+          "targetMean": 5.0,
+          "peerMean": 3.658
+        },
+        {
+          "feature": "congestion_penalty",
+          "label": "Congestion penalty",
+          "group": "lane_pressure_traffic",
+          "provenance": "proxy",
+          "direction": "lower",
+          "deltaStd": -2.378,
+          "targetMean": 1.0,
+          "peerMean": 2.508
+        }
+      ]
+    },
+    {
+      "satelliteId": "iss",
+      "displayName": "ISS",
+      "orbitClass": "LEO",
+      "vulnerabilityRegimeId": "regime-1",
+      "reason": "Unusual because it shows higher operator discipline (8.8\u03c3) and higher mission complexity (5.2\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.319934,
+      "withinPeerGroup": "regime z-score 14.49",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 8.786,
+          "targetMean": 5.0,
+          "peerMean": 3.019
+        },
+        {
+          "feature": "mission_complexity",
+          "label": "Mission complexity",
+          "group": "mission_operator",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.204,
+          "targetMean": 5.0,
+          "peerMean": 3.108
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -4.531,
+          "targetMean": 1998.0,
+          "peerMean": 2021.976
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-55159",
+      "displayName": "ONEWEB-0618",
+      "orbitClass": "LEO",
+      "vulnerabilityRegimeId": "regime-0",
+      "reason": "Unusual because it shows lower owner population (97.8\u03c3) and lower owner share (97.8\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.126412,
+      "withinPeerGroup": "regime z-score 46.72",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "owner_population",
+          "label": "Owner population",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -97.806,
+          "targetMean": 695.0,
+          "peerMean": 11536.867
+        },
+        {
+          "feature": "owner_share",
+          "label": "Owner share",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -97.806,
+          "targetMean": 0.046,
+          "peerMean": 0.756
+        },
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 6.407,
+          "targetMean": 15.0,
+          "peerMean": 2.193
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-67785",
+      "displayName": "KUIPER-00226",
+      "orbitClass": "LEO",
+      "vulnerabilityRegimeId": "regime-0",
+      "reason": "Unusual because it shows higher altitude span (12.4\u03c3) and higher eccentricity (12.3\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.047887,
+      "withinPeerGroup": "regime z-score 17.48",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 12.409,
+          "targetMean": 27.0,
+          "peerMean": 2.193
+        },
+        {
+          "feature": "eccentricity",
+          "label": "Eccentricity",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 12.269,
+          "targetMean": 0.002,
+          "peerMean": 0.0
+        },
+        {
+          "feature": "stability_bonus",
+          "label": "Stability bonus",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -9.515,
+          "targetMean": -2.0,
+          "peerMean": 2.191
+        }
+      ]
+    }
+  ],
+  "withinOrbitOutliers": [
+    {
+      "satelliteId": "norad-33401",
+      "displayName": "IBEX",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher apogee (11.8\u03c3) and higher altitude span (11.7\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 1.118489,
+      "withinPeerGroup": "GEO z-score 14.04",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "apogee_km",
+          "label": "Apogee",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 11.766,
+          "targetMean": 312517.0,
+          "peerMean": 38855.163
+        },
+        {
+          "feature": "altitude_span_km",
+          "label": "Altitude span",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 11.695,
+          "targetMean": 268674.0,
+          "peerMean": 3466.061
+        },
+        {
+          "feature": "mean_altitude_km",
+          "label": "Mean altitude",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "higher",
+          "deltaStd": 11.017,
+          "targetMean": 178180.0,
+          "peerMean": 37122.133
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-27704",
+      "displayName": "NAVSTAR 52 (USA 168)",
+      "orbitClass": "MEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows lower shell density (5.1\u03c3) and lower shell share (4.5\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 1.027518,
+      "withinPeerGroup": "MEO z-score 7.06",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -5.077,
+          "targetMean": 0.014,
+          "peerMean": 0.76
+        },
+        {
+          "feature": "shell_share",
+          "label": "Shell share",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -4.489,
+          "targetMean": 0.0,
+          "peerMean": 0.002
+        },
+        {
+          "feature": "shell_population",
+          "label": "Shell population",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -4.488,
+          "targetMean": 1.0,
+          "peerMean": 31.897
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-28129",
+      "displayName": "NAVSTAR 53 (USA 175)",
+      "orbitClass": "MEO",
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows lower shell density (5.1\u03c3) and lower shell share (4.5\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.978116,
+      "withinPeerGroup": "MEO z-score 6.71",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -5.077,
+          "targetMean": 0.014,
+          "peerMean": 0.76
+        },
+        {
+          "feature": "shell_share",
+          "label": "Shell share",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -4.489,
+          "targetMean": 0.0,
+          "peerMean": 0.002
+        },
+        {
+          "feature": "shell_population",
+          "label": "Shell population",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -4.488,
+          "targetMean": 1.0,
+          "peerMean": 31.897
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-25989",
+      "displayName": "XMM-NEWTON",
+      "orbitClass": "GEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher polar penalty (9.7\u03c3) and higher shell rank (7.6\u03c3), which helps explain its weak sustainability signal.",
+      "anomalyScore": 0.732495,
+      "withinPeerGroup": "GEO z-score 9.03",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "polar_penalty",
+          "label": "Polar penalty",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 9.666,
+          "targetMean": 1.0,
+          "peerMean": 0.011
+        },
+        {
+          "feature": "shell_rank_within_orbit",
+          "label": "Shell rank",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 7.618,
+          "targetMean": 17.0,
+          "peerMean": 1.466
+        },
+        {
+          "feature": "shell_density_percentile",
+          "label": "Shell density",
+          "group": "lane_pressure_traffic",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -6.324,
+          "targetMean": 0.014,
+          "peerMean": 0.916
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-32060",
+      "displayName": "WORLDVIEW-1 (WV-1)",
+      "orbitClass": "LEO",
+      "vulnerabilityRegimeId": "regime-1",
+      "reason": "Unusual because it shows higher operator discipline (10.2\u03c3) and lower launch year (5.7\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.465307,
+      "withinPeerGroup": "LEO z-score 38.29",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 10.227,
+          "targetMean": 4.0,
+          "peerMean": 3.003
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -5.661,
+          "targetMean": 2007.0,
+          "peerMean": 2023.359
+        },
+        {
+          "feature": "launch_age_years",
+          "label": "Launch age",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 5.661,
+          "targetMean": 19.24,
+          "peerMean": 2.881
+        }
+      ]
+    },
+    {
+      "satelliteId": "aqua",
+      "displayName": "Aqua",
+      "orbitClass": "SSO",
+      "vulnerabilityRegimeId": "regime-2",
+      "reason": "Unusual because it shows higher operator discipline (5.5\u03c3) and lower launch year (3.6\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.416064,
+      "withinPeerGroup": "SSO z-score 18.23",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 5.486,
+          "targetMean": 4.0,
+          "peerMean": 3.014
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -3.604,
+          "targetMean": 2002.0,
+          "peerMean": 2021.442
+        },
+        {
+          "feature": "launch_age_years",
+          "label": "Launch age",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 3.604,
+          "targetMean": 24.24,
+          "peerMean": 4.798
+        }
+      ]
+    },
+    {
+      "satelliteId": "landsat8",
+      "displayName": "Landsat 8",
+      "orbitClass": "SSO",
+      "vulnerabilityRegimeId": "regime-2",
+      "reason": "Unusual because it shows higher operator discipline (11.1\u03c3) and higher sustainability commitment (2.5\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.399339,
+      "withinPeerGroup": "SSO z-score 17.48",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 11.05,
+          "targetMean": 5.0,
+          "peerMean": 3.014
+        },
+        {
+          "feature": "sustainability_commitment",
+          "label": "Sustainability commitment",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 2.543,
+          "targetMean": 5.0,
+          "peerMean": 3.66
+        },
+        {
+          "feature": "congestion_penalty",
+          "label": "Congestion penalty",
+          "group": "lane_pressure_traffic",
+          "provenance": "proxy",
+          "direction": "lower",
+          "deltaStd": -2.358,
+          "targetMean": 1.0,
+          "peerMean": 2.508
+        }
+      ]
+    },
+    {
+      "satelliteId": "iss",
+      "displayName": "ISS",
+      "orbitClass": "LEO",
+      "vulnerabilityRegimeId": "regime-1",
+      "reason": "Unusual because it shows higher operator discipline (20.5\u03c3) and lower launch year (8.8\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.319934,
+      "withinPeerGroup": "LEO z-score 26.23",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 20.486,
+          "targetMean": 5.0,
+          "peerMean": 3.003
+        },
+        {
+          "feature": "launch_year",
+          "label": "Launch year",
+          "group": "mission_operator",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -8.775,
+          "targetMean": 1998.0,
+          "peerMean": 2023.359
+        },
+        {
+          "feature": "launch_age_years",
+          "label": "Launch age",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 8.775,
+          "targetMean": 28.24,
+          "peerMean": 2.881
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-62850",
+      "displayName": "NVS-02 (IRNSS-1K)",
+      "orbitClass": "HEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher operator discipline (2.2\u03c3) and lower latitude span (2.0\u03c3), which helps explain its weak debris exposure signal.",
+      "anomalyScore": 0.291423,
+      "withinPeerGroup": "HEO z-score 2.49",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "operator_discipline",
+          "label": "Operator discipline",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 2.189,
+          "targetMean": 4.0,
+          "peerMean": 2.976
+        },
+        {
+          "feature": "latitude_span_deg",
+          "label": "Latitude span",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "lower",
+          "deltaStd": -1.968,
+          "targetMean": 41.64,
+          "peerMean": 110.614
+        },
+        {
+          "feature": "inclination_deg",
+          "label": "Inclination",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -1.936,
+          "targetMean": 20.82,
+          "peerMean": 55.51
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-38745",
+      "displayName": "EXPRESS-MD2",
+      "orbitClass": "HEO",
+      "vulnerabilityRegimeId": "regime-4",
+      "reason": "Unusual because it shows higher mean motion (3.3\u03c3) and lower mean altitude (2.4\u03c3), which helps explain its weak debris exposure signal.",
+      "anomalyScore": 0.288094,
+      "withinPeerGroup": "HEO z-score 2.44",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "mean_motion_rev_per_day",
+          "label": "Mean motion",
+          "group": "orbital_geometry",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 3.281,
+          "targetMean": 12.379,
+          "peerMean": 3.179
+        },
+        {
+          "feature": "mean_altitude_km",
+          "label": "Mean altitude",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -2.385,
+          "targetMean": 1515.5,
+          "peerMean": 17654.354
+        },
+        {
+          "feature": "period_minutes",
+          "label": "Orbital period",
+          "group": "orbital_geometry",
+          "provenance": "direct",
+          "direction": "lower",
+          "deltaStd": -2.221,
+          "targetMean": 116.33,
+          "peerMean": 637.865
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-67759",
+      "displayName": "USA 582",
+      "orbitClass": null,
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows higher owner population (1.5\u03c3) and higher owner share (1.5\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.114209,
+      "withinPeerGroup": "Unknown z-score 1.63",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "owner_population",
+          "label": "Owner population",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 1.519,
+          "targetMean": 11538.0,
+          "peerMean": 3551.256
+        },
+        {
+          "feature": "owner_share",
+          "label": "Owner share",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 1.519,
+          "targetMean": 0.756,
+          "peerMean": 0.233
+        },
+        {
+          "feature": "sustainability_commitment",
+          "label": "Sustainability commitment",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 1.144,
+          "targetMean": 4.0,
+          "peerMean": 3.256
+        }
+      ]
+    },
+    {
+      "satelliteId": "norad-67760",
+      "displayName": "USA 583",
+      "orbitClass": null,
+      "vulnerabilityRegimeId": "regime-3",
+      "reason": "Unusual because it shows higher owner population (1.5\u03c3) and higher owner share (1.5\u03c3), which helps explain its weak congestion impact signal.",
+      "anomalyScore": 0.114209,
+      "withinPeerGroup": "Unknown z-score 1.63",
+      "dominantFeatureDeviations": [
+        {
+          "feature": "owner_population",
+          "label": "Owner population",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 1.519,
+          "targetMean": 11538.0,
+          "peerMean": 3551.256
+        },
+        {
+          "feature": "owner_share",
+          "label": "Owner share",
+          "group": "mission_operator",
+          "provenance": "derived",
+          "direction": "higher",
+          "deltaStd": 1.519,
+          "targetMean": 0.756,
+          "peerMean": 0.233
+        },
+        {
+          "feature": "sustainability_commitment",
+          "label": "Sustainability commitment",
+          "group": "stewardship_sustainability",
+          "provenance": "proxy",
+          "direction": "higher",
+          "deltaStd": 1.144,
+          "targetMean": 4.0,
+          "peerMean": 3.256
+        }
+      ]
+    }
+  ],
+  "qualityNotes": [
+    "Global outliers are ranked by reconstruction error from the learned autoencoder.",
+    "Within-regime outliers compare each satellite against the peers in its learned vulnerability regime.",
+    "Within-orbit outliers compare each satellite against peers that share the same orbit label."
+  ]
+}

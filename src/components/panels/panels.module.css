@@ -1,0 +1,259 @@
+.frame {
+  min-height: 0;
+  overflow: hidden;
+  opacity: 0.95;
+}
+
+.frame :global(.panel-title) {
+  max-width: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.frame :global(.panel-description) {
+  display: none;
+}
+
+.frame :global(.panel-body) {
+  gap: 12px;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.hero,
+.breakdownSection,
+.emptyState {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  gap: 10px;
+}
+
+.heroAssetName {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.82);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.heroScoreValue {
+  margin: 0;
+  font-size: 5.35rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.88;
+  color: color-mix(in srgb, var(--detail-accent) 76%, #f5f7fb);
+}
+
+.heroRiskLabel {
+  margin: 0;
+  color: color-mix(in srgb, var(--detail-accent) 92%, #f5f7fb);
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.heroValue {
+  margin: 0;
+  color: rgba(145, 156, 171, 0.82);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.emptyTitle {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: rgba(145, 156, 171, 0.82);
+}
+
+.breakdownSection {
+  gap: 18px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.scoreList,
+.scoreRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreList {
+  gap: 16px;
+}
+
+.scoreRow {
+  gap: 8px;
+}
+
+.scoreRowGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scoreRowTitle {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: rgba(145, 156, 171, 0.74);
+}
+
+.scoreRowMetaLine {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.scoreRowBar {
+  position: relative;
+  height: 3px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.scoreRowBarFill {
+  display: block;
+  width: var(--factor-progress);
+  height: 100%;
+  border-radius: inherit;
+  background: color-mix(in srgb, var(--score-accent) 88%, #f5f7fb);
+}
+
+.scoreRowValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--score-accent) 82%, #f5f7fb);
+  white-space: nowrap;
+}
+
+.scoreRowDot {
+  color: rgba(145, 156, 171, 0.54);
+  font-size: 0.76rem;
+}
+
+.scoreRowStatus {
+  font-size: 0.84rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.analysisDisclosure {
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.analysisSummary {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  color: #f5f7fb;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  transition: color 160ms ease;
+}
+
+.analysisSummary::-webkit-details-marker {
+  display: none;
+}
+
+.analysisSummary:hover {
+  color: #8fb7d8;
+}
+
+.analysisLead {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.72);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.analysisContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.analysisItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.analysisItemTitle {
+  margin: 0;
+  color: rgba(245, 247, 251, 0.88);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.analysisItemCopy {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.62);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.emptyState {
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.emptyCopy {
+  margin: 0;
+  color: rgba(227, 232, 239, 0.6);
+  line-height: 1.45;
+}
+
+.scoreRow[data-tone="leading"] .scoreRowBarFill,
+.scoreRow[data-tone="strong"] .scoreRowBarFill {
+  background: #7d98b3;
+}
+
+.scoreRow[data-tone="leading"] .scoreRowValue,
+.scoreRow[data-tone="strong"] .scoreRowValue,
+.scoreRow[data-tone="leading"] .scoreRowStatus,
+.scoreRow[data-tone="strong"] .scoreRowStatus {
+  color: #7d98b3;
+}
+
+.scoreRow[data-tone="mixed"] .scoreRowBarFill,
+.scoreRow[data-tone="mixed"] .scoreRowBarFill {
+  background: #f29b38;
+}
+
+.scoreRow[data-tone="mixed"] .scoreRowValue,
+.scoreRow[data-tone="mixed"] .scoreRowStatus {
+  color: #f29b38;
+}
+
+.scoreRow[data-tone="watch"] .scoreRowBarFill,
+.scoreRow[data-tone="watch"] .scoreRowBarFill {
+  background: #ff5e52;
+}
+
+.scoreRow[data-tone="watch"] .scoreRowValue,
+.scoreRow[data-tone="watch"] .scoreRowStatus {
+  color: #ff5e52;
+}
+
+@media (max-width: 1180px) {
+  .scoreRowMetaLine {
+    flex-wrap: wrap;
+  }
+}

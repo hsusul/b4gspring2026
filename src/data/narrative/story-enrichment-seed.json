@@ -1,0 +1,162 @@
+[
+  {
+    "satelliteId": "iss",
+    "noradId": 25544,
+    "displayName": "ISS",
+    "operatorName": "NASA",
+    "companyName": "NASA / Roscosmos",
+    "countryCode": "US",
+    "missionClass": "Crewed research platform",
+    "serviceRegion": "Low Earth orbital corridor",
+    "tags": ["crew", "research", "high-traffic"],
+    "summary": "NASA-led crewed platform that anchors the demo's busiest LEO lane and highest-complexity operations profile.",
+    "highlightColor": "#79c6ff",
+    "scoringInputs": {
+      "operatorDiscipline": 5,
+      "missionComplexity": 5,
+      "congestionPenalty": 3,
+      "debrisPenalty": 2,
+      "sustainabilityCommitment": 4
+    }
+  },
+  {
+    "satelliteId": "landsat8",
+    "noradId": 39084,
+    "displayName": "Landsat 8",
+    "operatorName": "USGS",
+    "companyName": "NASA / USGS",
+    "countryCode": "US",
+    "missionClass": "Earth observation imaging",
+    "serviceRegion": "Global land imaging",
+    "tags": ["earth-observation", "imagery", "public-data"],
+    "summary": "USGS-operated public imaging mission used to represent a stable, science-driven sun-synchronous asset.",
+    "highlightColor": "#8af0b4",
+    "scoringInputs": {
+      "operatorDiscipline": 5,
+      "missionComplexity": 2,
+      "congestionPenalty": 1,
+      "debrisPenalty": 1,
+      "sustainabilityCommitment": 5
+    }
+  },
+  {
+    "satelliteId": "aqua",
+    "noradId": 27424,
+    "displayName": "Aqua",
+    "operatorName": "NASA",
+    "companyName": "NASA",
+    "countryCode": "US",
+    "missionClass": "Earth system science",
+    "serviceRegion": "Global climate and hydrology monitoring",
+    "tags": ["climate", "science", "earth-observation"],
+    "summary": "NASA climate observatory that broadens the fleet beyond weather and crewed operations.",
+    "highlightColor": "#7fe6ff",
+    "scoringInputs": {
+      "operatorDiscipline": 4,
+      "missionComplexity": 2,
+      "congestionPenalty": 1,
+      "debrisPenalty": 1,
+      "sustainabilityCommitment": 4
+    }
+  },
+  {
+    "satelliteId": "suomi",
+    "noradId": 37849,
+    "displayName": "Suomi NPP",
+    "operatorName": "NOAA",
+    "companyName": "NOAA / NASA",
+    "countryCode": "US",
+    "missionClass": "Weather and climate monitoring",
+    "serviceRegion": "Global forecast inputs",
+    "tags": ["weather", "climate", "public-service"],
+    "summary": "NOAA civil-weather mission that shows how operational forecasting assets compare with pure science platforms.",
+    "highlightColor": "#a5c8ff",
+    "scoringInputs": {
+      "operatorDiscipline": 5,
+      "missionComplexity": 2,
+      "congestionPenalty": 1,
+      "debrisPenalty": 1,
+      "sustainabilityCommitment": 5
+    }
+  },
+  {
+    "satelliteId": "noaa20",
+    "noradId": 43013,
+    "displayName": "NOAA-20",
+    "operatorName": "NOAA",
+    "companyName": "NOAA / NASA",
+    "countryCode": "US",
+    "missionClass": "Operational weather sensing",
+    "serviceRegion": "Global forecast inputs",
+    "tags": ["weather", "operations", "public-service"],
+    "summary": "NOAA polar weather asset that pairs with Suomi NPP to make the civil-weather fleet feel like a real portfolio.",
+    "highlightColor": "#7dd0ff",
+    "scoringInputs": {
+      "operatorDiscipline": 5,
+      "missionComplexity": 2,
+      "congestionPenalty": 1,
+      "debrisPenalty": 1,
+      "sustainabilityCommitment": 5
+    }
+  },
+  {
+    "satelliteId": "swarma",
+    "noradId": 39451,
+    "displayName": "Swarm A",
+    "operatorName": "ESA",
+    "companyName": "ESA",
+    "countryCode": "EU",
+    "missionClass": "Geomagnetic field monitoring",
+    "serviceRegion": "Global magnetic field sampling",
+    "tags": ["science", "polar", "geomagnetic"],
+    "summary": "ESA polar science mission that adds a visibly non-US operator and a lower-scoring high-latitude lane.",
+    "highlightColor": "#ffd27b",
+    "scoringInputs": {
+      "operatorDiscipline": 4,
+      "missionComplexity": 3,
+      "congestionPenalty": 2,
+      "debrisPenalty": 2,
+      "sustainabilityCommitment": 4
+    }
+  },
+  {
+    "satelliteId": "goes18",
+    "noradId": 51850,
+    "displayName": "GOES-18",
+    "operatorName": "NOAA",
+    "companyName": "NOAA / NASA",
+    "countryCode": "US",
+    "missionClass": "Geostationary weather monitoring",
+    "serviceRegion": "Pacific basin and North America",
+    "tags": ["weather", "geostationary", "public-safety"],
+    "summary": "NOAA geostationary weather flagship that gives the demo a calm high-altitude comparison target.",
+    "highlightColor": "#7fe6ff",
+    "scoringInputs": {
+      "operatorDiscipline": 5,
+      "missionComplexity": 2,
+      "congestionPenalty": 0,
+      "debrisPenalty": 0,
+      "sustainabilityCommitment": 5
+    }
+  },
+  {
+    "satelliteId": "sdo",
+    "noradId": 36395,
+    "displayName": "SDO",
+    "operatorName": "NASA",
+    "companyName": "NASA",
+    "countryCode": "US",
+    "missionClass": "Solar dynamics monitoring",
+    "serviceRegion": "Sun-facing geosynchronous science arc",
+    "tags": ["solar", "heliophysics", "geosynchronous"],
+    "summary": "NASA solar observatory that contrasts with Earth-facing assets while keeping the fleet visibly multi-mission.",
+    "highlightColor": "#ffb36b",
+    "scoringInputs": {
+      "operatorDiscipline": 5,
+      "missionComplexity": 3,
+      "congestionPenalty": 1,
+      "debrisPenalty": 1,
+      "sustainabilityCommitment": 4
+    }
+  }
+]

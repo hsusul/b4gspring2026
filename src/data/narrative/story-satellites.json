@@ -1,0 +1,4082 @@
+[
+  {
+    "satelliteId": "goes18",
+    "noradId": 51850,
+    "displayName": "GOES-18",
+    "operatorName": "NOAA",
+    "companyName": "NOAA / NASA",
+    "rating": "A",
+    "riskLabel": "Low",
+    "riskSummary": "GOES-18 stays most credible on orbital safety, but sustainability / end-of-life is the clearest drag on the final score.",
+    "orbitClass": "GEO",
+    "countryCode": "US",
+    "missionClass": "Geostationary weather monitoring",
+    "serviceRegion": "Pacific basin and North America",
+    "tags": [
+      "weather",
+      "geostationary",
+      "public-safety"
+    ],
+    "summary": "NOAA geostationary weather flagship that gives the demo a calm high-altitude comparison target.",
+    "demoExplanation": "Geostationary orbit with low congestion exposure and a very stable trajectory.",
+    "scoreBreakdown": {
+      "total": 91,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. GOES-18 is carried by orbital safety, while sustainability / end-of-life is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 25,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "leading",
+          "explanation": "The orbit sits in a geostationary lane that is operationally steady. NASA's sampled arc shows an almost perfectly stable altitude profile. Mission complexity is comparatively contained."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 23,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "leading",
+          "explanation": "Geostationary spacing is comparatively orderly in the local model."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 22,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "Debris in GEO is long-lived, but conjunction density is still lower than the busiest LEO corridors. The geostationary shell is persistent, but it is not the most collision-saturated regime."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 21,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "NOAA gets a local stewardship assumption of 5/5. The GEO regime earns a neutral end-of-life adjustment in this heuristic. Mission complexity is scored at 2/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#7fe6ff",
+    "latestPosition": {
+      "satelliteId": "goes18",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": -0.013853,
+      "longitudeDeg": -136.99844,
+      "altitudeKm": 35787.678
+    },
+    "trajectory": [
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": 0.001271,
+        "longitudeDeg": -136.99422,
+        "altitudeKm": 35787.967
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": 0.000999,
+        "longitudeDeg": -136.9943,
+        "altitudeKm": 35787.971
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": 0.000727,
+        "longitudeDeg": -136.99435,
+        "altitudeKm": 35787.977
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": 0.000455,
+        "longitudeDeg": -136.99442,
+        "altitudeKm": 35787.986
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": 0.000182,
+        "longitudeDeg": -136.99449,
+        "altitudeKm": 35787.991
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": -0.00009,
+        "longitudeDeg": -136.99457,
+        "altitudeKm": 35787.998
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": -0.000363,
+        "longitudeDeg": -136.99464,
+        "altitudeKm": 35788.001
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": -0.000635,
+        "longitudeDeg": -136.99472,
+        "altitudeKm": 35788.006
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": -0.000908,
+        "longitudeDeg": -136.99478,
+        "altitudeKm": 35788.009
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": -0.001181,
+        "longitudeDeg": -136.99486,
+        "altitudeKm": 35788.013
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": -0.001453,
+        "longitudeDeg": -136.99493,
+        "altitudeKm": 35788.017
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": -0.001725,
+        "longitudeDeg": -136.99501,
+        "altitudeKm": 35788.021
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": -0.001997,
+        "longitudeDeg": -136.99509,
+        "altitudeKm": 35788.023
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": -0.002269,
+        "longitudeDeg": -136.99515,
+        "altitudeKm": 35788.023
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": -0.00254,
+        "longitudeDeg": -136.99522,
+        "altitudeKm": 35788.026
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": -0.002811,
+        "longitudeDeg": -136.9953,
+        "altitudeKm": 35788.027
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": -0.003082,
+        "longitudeDeg": -136.99538,
+        "altitudeKm": 35788.031
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": -0.003352,
+        "longitudeDeg": -136.9955,
+        "altitudeKm": 35788.029
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": -0.003621,
+        "longitudeDeg": -136.99553,
+        "altitudeKm": 35788.03
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": -0.00389,
+        "longitudeDeg": -136.99556,
+        "altitudeKm": 35788.029
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": -0.004159,
+        "longitudeDeg": -136.99567,
+        "altitudeKm": 35788.027
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": -0.004426,
+        "longitudeDeg": -136.99574,
+        "altitudeKm": 35788.026
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": -0.004693,
+        "longitudeDeg": -136.99582,
+        "altitudeKm": 35788.027
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": -0.00496,
+        "longitudeDeg": -136.9959,
+        "altitudeKm": 35788.023
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": -0.005225,
+        "longitudeDeg": -136.99597,
+        "altitudeKm": 35788.021
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": -0.00549,
+        "longitudeDeg": -136.99603,
+        "altitudeKm": 35788.017
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": -0.005753,
+        "longitudeDeg": -136.99611,
+        "altitudeKm": 35788.015
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": -0.006016,
+        "longitudeDeg": -136.99619,
+        "altitudeKm": 35788.011
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": -0.006278,
+        "longitudeDeg": -136.99626,
+        "altitudeKm": 35788.008
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": -0.006538,
+        "longitudeDeg": -136.99634,
+        "altitudeKm": 35788.004
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": -0.006798,
+        "longitudeDeg": -136.9964,
+        "altitudeKm": 35787.999
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": -0.007056,
+        "longitudeDeg": -136.99648,
+        "altitudeKm": 35787.992
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": -0.007314,
+        "longitudeDeg": -136.99655,
+        "altitudeKm": 35787.99
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": -0.00757,
+        "longitudeDeg": -136.99663,
+        "altitudeKm": 35787.982
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": -0.007824,
+        "longitudeDeg": -136.99669,
+        "altitudeKm": 35787.977
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": -0.008078,
+        "longitudeDeg": -136.99677,
+        "altitudeKm": 35787.971
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": -0.00833,
+        "longitudeDeg": -136.99684,
+        "altitudeKm": 35787.963
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": -0.00858,
+        "longitudeDeg": -136.9969,
+        "altitudeKm": 35787.956
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": -0.00883,
+        "longitudeDeg": -136.99698,
+        "altitudeKm": 35787.947
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": -0.009077,
+        "longitudeDeg": -136.99706,
+        "altitudeKm": 35787.938
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": -0.009323,
+        "longitudeDeg": -136.99712,
+        "altitudeKm": 35787.927
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": -0.009568,
+        "longitudeDeg": -136.9972,
+        "altitudeKm": 35787.921
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": -0.009811,
+        "longitudeDeg": -136.99727,
+        "altitudeKm": 35787.91
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": -0.010052,
+        "longitudeDeg": -136.99733,
+        "altitudeKm": 35787.901
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": -0.010291,
+        "longitudeDeg": -136.9974,
+        "altitudeKm": 35787.89
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": -0.010529,
+        "longitudeDeg": -136.99747,
+        "altitudeKm": 35787.879
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": -0.010765,
+        "longitudeDeg": -136.99754,
+        "altitudeKm": 35787.871
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": -0.010999,
+        "longitudeDeg": -136.9976,
+        "altitudeKm": 35787.856
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": -0.011231,
+        "longitudeDeg": -136.99768,
+        "altitudeKm": 35787.847
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": -0.011461,
+        "longitudeDeg": -136.99774,
+        "altitudeKm": 35787.834
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": -0.011689,
+        "longitudeDeg": -136.9978,
+        "altitudeKm": 35787.821
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": -0.011915,
+        "longitudeDeg": -136.99788,
+        "altitudeKm": 35787.806
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": -0.01214,
+        "longitudeDeg": -136.99794,
+        "altitudeKm": 35787.797
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": -0.012362,
+        "longitudeDeg": -136.998,
+        "altitudeKm": 35787.781
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": -0.012581,
+        "longitudeDeg": -136.99806,
+        "altitudeKm": 35787.77
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": -0.012799,
+        "longitudeDeg": -136.99814,
+        "altitudeKm": 35787.755
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": -0.013014,
+        "longitudeDeg": -136.9982,
+        "altitudeKm": 35787.739
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": -0.013228,
+        "longitudeDeg": -136.99826,
+        "altitudeKm": 35787.725
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": -0.013438,
+        "longitudeDeg": -136.99832,
+        "altitudeKm": 35787.713
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": -0.013647,
+        "longitudeDeg": -136.99838,
+        "altitudeKm": 35787.69
+      },
+      {
+        "satelliteId": "goes18",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": -0.013853,
+        "longitudeDeg": -136.99844,
+        "altitudeKm": 35787.678
+      }
+    ]
+  },
+  {
+    "satelliteId": "sdo",
+    "noradId": 36395,
+    "displayName": "SDO",
+    "operatorName": "NASA",
+    "companyName": "NASA",
+    "rating": "A",
+    "riskLabel": "Low",
+    "riskSummary": "SDO stays most credible on orbital safety, but sustainability / end-of-life is the clearest drag on the final score.",
+    "orbitClass": "GEO",
+    "countryCode": "US",
+    "missionClass": "Solar dynamics monitoring",
+    "serviceRegion": "Sun-facing geosynchronous science arc",
+    "tags": [
+      "solar",
+      "heliophysics",
+      "geosynchronous"
+    ],
+    "summary": "NASA solar observatory that contrasts with Earth-facing assets while keeping the fleet visibly multi-mission.",
+    "demoExplanation": "Geostationary orbit with low congestion exposure and a stable trajectory.",
+    "scoreBreakdown": {
+      "total": 87,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. SDO is carried by orbital safety, while sustainability / end-of-life is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 25,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "leading",
+          "explanation": "The orbit sits in a geostationary lane that is operationally steady. NASA's sampled arc stays tightly clustered in altitude. Mission complexity is moderate, which trims some of the safety headroom."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 22,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "Geostationary spacing is comparatively orderly in the local model."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 21,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "Debris in GEO is long-lived, but conjunction density is still lower than the busiest LEO corridors. The geostationary shell is persistent, but it is not the most collision-saturated regime."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 19,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "NASA gets a local stewardship assumption of 5/5. The GEO regime earns a neutral end-of-life adjustment in this heuristic. Mission complexity is scored at 3/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#ffb36b",
+    "latestPosition": {
+      "satelliteId": "sdo",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": -18.284716,
+      "longitudeDeg": -106.69742,
+      "altitudeKm": 35789.234
+    },
+    "trajectory": [
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": 6.451102,
+        "longitudeDeg": -99.82947,
+        "altitudeKm": 35784.93
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": 6.030953,
+        "longitudeDeg": -99.954,
+        "altitudeKm": 35785.004
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": 5.61009,
+        "longitudeDeg": -100.0795,
+        "altitudeKm": 35785.077
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": 5.188563,
+        "longitudeDeg": -100.2059,
+        "altitudeKm": 35785.147
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": 4.766423,
+        "longitudeDeg": -100.33316,
+        "altitudeKm": 35785.221
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": 4.34372,
+        "longitudeDeg": -100.46118,
+        "altitudeKm": 35785.292
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": 3.920507,
+        "longitudeDeg": -100.5899,
+        "altitudeKm": 35785.361
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": 3.496832,
+        "longitudeDeg": -100.71924,
+        "altitudeKm": 35785.436
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": 3.072747,
+        "longitudeDeg": -100.84918,
+        "altitudeKm": 35785.51
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": 2.648302,
+        "longitudeDeg": -100.97958,
+        "altitudeKm": 35785.582
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": 2.223547,
+        "longitudeDeg": -101.1104,
+        "altitudeKm": 35785.654
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": 1.798534,
+        "longitudeDeg": -101.24164,
+        "altitudeKm": 35785.723
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": 1.37331,
+        "longitudeDeg": -101.37314,
+        "altitudeKm": 35785.797
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": 0.947927,
+        "longitudeDeg": -101.50485,
+        "altitudeKm": 35785.869
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": 0.522435,
+        "longitudeDeg": -101.63672,
+        "altitudeKm": 35785.942
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": 0.096882,
+        "longitudeDeg": -101.76868,
+        "altitudeKm": 35786.011
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": -0.32868,
+        "longitudeDeg": -101.90067,
+        "altitudeKm": 35786.085
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": -0.754202,
+        "longitudeDeg": -102.0326,
+        "altitudeKm": 35786.157
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": -1.179635,
+        "longitudeDeg": -102.1644,
+        "altitudeKm": 35786.225
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": -1.60572,
+        "longitudeDeg": -102.29953,
+        "altitudeKm": 35786.527
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": -2.030844,
+        "longitudeDeg": -102.4309,
+        "altitudeKm": 35786.599
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": -2.455729,
+        "longitudeDeg": -102.56195,
+        "altitudeKm": 35786.673
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": -2.880324,
+        "longitudeDeg": -102.69263,
+        "altitudeKm": 35786.745
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": -3.304579,
+        "longitudeDeg": -102.82285,
+        "altitudeKm": 35786.815
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": -3.728443,
+        "longitudeDeg": -102.9525,
+        "altitudeKm": 35786.892
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": -4.151867,
+        "longitudeDeg": -103.0816,
+        "altitudeKm": 35786.963
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": -4.574801,
+        "longitudeDeg": -103.21002,
+        "altitudeKm": 35787.035
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": -4.997191,
+        "longitudeDeg": -103.3377,
+        "altitudeKm": 35787.107
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": -5.41899,
+        "longitudeDeg": -103.46457,
+        "altitudeKm": 35787.177
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": -5.840144,
+        "longitudeDeg": -103.59058,
+        "altitudeKm": 35787.249
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": -6.260605,
+        "longitudeDeg": -103.71564,
+        "altitudeKm": 35787.318
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": -6.680318,
+        "longitudeDeg": -103.83972,
+        "altitudeKm": 35787.389
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": -7.099233,
+        "longitudeDeg": -103.9627,
+        "altitudeKm": 35787.459
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": -7.517299,
+        "longitudeDeg": -104.08453,
+        "altitudeKm": 35787.527
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": -7.934462,
+        "longitudeDeg": -104.20517,
+        "altitudeKm": 35787.598
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": -8.35067,
+        "longitudeDeg": -104.32451,
+        "altitudeKm": 35787.665
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": -8.76587,
+        "longitudeDeg": -104.4425,
+        "altitudeKm": 35787.733
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": -9.18001,
+        "longitudeDeg": -104.55911,
+        "altitudeKm": 35787.804
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": -9.593036,
+        "longitudeDeg": -104.67421,
+        "altitudeKm": 35787.872
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": -10.004894,
+        "longitudeDeg": -104.78777,
+        "altitudeKm": 35787.938
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": -10.415531,
+        "longitudeDeg": -104.8997,
+        "altitudeKm": 35788.004
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": -10.82489,
+        "longitudeDeg": -105.00996,
+        "altitudeKm": 35788.072
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": -11.232921,
+        "longitudeDeg": -105.11847,
+        "altitudeKm": 35788.134
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": -11.639562,
+        "longitudeDeg": -105.22516,
+        "altitudeKm": 35788.202
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": -12.044762,
+        "longitudeDeg": -105.32996,
+        "altitudeKm": 35788.268
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": -12.448465,
+        "longitudeDeg": -105.4328,
+        "altitudeKm": 35788.332
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": -12.850613,
+        "longitudeDeg": -105.53363,
+        "altitudeKm": 35788.396
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": -13.251148,
+        "longitudeDeg": -105.63239,
+        "altitudeKm": 35788.461
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": -13.650017,
+        "longitudeDeg": -105.729,
+        "altitudeKm": 35788.52
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": -14.047157,
+        "longitudeDeg": -105.8234,
+        "altitudeKm": 35788.584
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": -14.442512,
+        "longitudeDeg": -105.9155,
+        "altitudeKm": 35788.647
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": -14.836024,
+        "longitudeDeg": -106.00526,
+        "altitudeKm": 35788.709
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": -15.227634,
+        "longitudeDeg": -106.09262,
+        "altitudeKm": 35788.769
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": -15.617279,
+        "longitudeDeg": -106.17752,
+        "altitudeKm": 35788.831
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": -16.004902,
+        "longitudeDeg": -106.25989,
+        "altitudeKm": 35788.89
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": -16.390444,
+        "longitudeDeg": -106.33966,
+        "altitudeKm": 35788.949
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": -16.773836,
+        "longitudeDeg": -106.41676,
+        "altitudeKm": 35789.007
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": -17.155025,
+        "longitudeDeg": -106.49115,
+        "altitudeKm": 35789.064
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": -17.533943,
+        "longitudeDeg": -106.56276,
+        "altitudeKm": 35789.12
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": -17.910526,
+        "longitudeDeg": -106.63153,
+        "altitudeKm": 35789.179
+      },
+      {
+        "satelliteId": "sdo",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": -18.284716,
+        "longitudeDeg": -106.69742,
+        "altitudeKm": 35789.234
+      }
+    ]
+  },
+  {
+    "satelliteId": "landsat8",
+    "noradId": 39084,
+    "displayName": "Landsat 8",
+    "operatorName": "USGS",
+    "companyName": "NASA / USGS",
+    "rating": "B",
+    "riskLabel": "Moderate",
+    "riskSummary": "Landsat 8 stays most credible on orbital safety, but congestion impact is the clearest drag on the final score.",
+    "orbitClass": "SSO",
+    "countryCode": "US",
+    "missionClass": "Earth observation imaging",
+    "serviceRegion": "Global land imaging",
+    "tags": [
+      "earth-observation",
+      "imagery",
+      "public-data"
+    ],
+    "summary": "USGS-operated public imaging mission used to represent a stable, science-driven sun-synchronous asset.",
+    "demoExplanation": "Sun-synchronous orbit with moderate congestion exposure and a mostly stable trajectory.",
+    "scoreBreakdown": {
+      "total": 77,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. Landsat 8 is carried by orbital safety, while congestion impact is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 23,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "leading",
+          "explanation": "The craft flies in a sun-synchronous lane with repeatable geometry and heavy reuse. NASA's sampled arc is stable enough for a hackathon-scale scorecard. Mission complexity is comparatively contained."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous shells are structurally busy because many imaging and weather missions reuse them. High-latitude coverage adds more lane crossings."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous debris remains persistent because the shell is heavily reused and slowly clears."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 22,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "USGS gets a local stewardship assumption of 5/5. The SSO regime has a comparatively explainable disposal path in this heuristic. Mission complexity is scored at 2/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#8af0b4",
+    "latestPosition": {
+      "satelliteId": "landsat8",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": -61.385677,
+      "longitudeDeg": -87.29315,
+      "altitudeKm": 710.413
+    },
+    "trajectory": [
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": -52.21149,
+        "longitudeDeg": 163.71848,
+        "altitudeKm": 710.136
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": -41.551514,
+        "longitudeDeg": 159.59766,
+        "altitudeKm": 709.647
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": -30.816896,
+        "longitudeDeg": 156.44234,
+        "altitudeKm": 708.936
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": -20.042019,
+        "longitudeDeg": 153.7756,
+        "altitudeKm": 707.969
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": -9.244115,
+        "longitudeDeg": 151.35715,
+        "altitudeKm": 706.733
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": 1.56604,
+        "longitudeDeg": 149.03844,
+        "altitudeKm": 705.24
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": 12.379757,
+        "longitudeDeg": 146.70255,
+        "altitudeKm": 703.537
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": 23.187788,
+        "longitudeDeg": 144.22723,
+        "altitudeKm": 701.7
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": 33.97742,
+        "longitudeDeg": 141.44421,
+        "altitudeKm": 699.833
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": 44.72691,
+        "longitudeDeg": 138.06274,
+        "altitudeKm": 698.055
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": 55.39055,
+        "longitudeDeg": 133.46835,
+        "altitudeKm": 696.493
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": 65.84582,
+        "longitudeDeg": 126.03216,
+        "altitudeKm": 695.263
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": 75.62081,
+        "longitudeDeg": 109.83661,
+        "altitudeKm": 694.465
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": 81.754654,
+        "longitudeDeg": 59.628338,
+        "altitudeKm": 694.162
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": 77.071075,
+        "longitudeDeg": 1.369339,
+        "altitudeKm": 694.379
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": 67.54486,
+        "longitudeDeg": -17.8429,
+        "altitudeKm": 695.097
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": 57.150787,
+        "longitudeDeg": -26.0978,
+        "altitudeKm": 696.26
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": 46.509636,
+        "longitudeDeg": -31.004,
+        "altitudeKm": 697.774
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": 35.770206,
+        "longitudeDeg": -34.5306,
+        "altitudeKm": 699.525
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": 24.98536,
+        "longitudeDeg": -37.38794,
+        "altitudeKm": 701.385
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": 14.179348,
+        "longitudeDeg": -39.9008,
+        "altitudeKm": 703.235
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": 3.365874,
+        "longitudeDeg": -42.25073,
+        "altitudeKm": 704.966
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": -7.445474,
+        "longitudeDeg": -44.56448,
+        "altitudeKm": 706.497
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": -18.24608,
+        "longitudeDeg": -46.95743,
+        "altitudeKm": 707.779
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": -29.02574,
+        "longitudeDeg": -49.56973,
+        "altitudeKm": 708.791
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": -39.76878,
+        "longitudeDeg": -52.61996,
+        "altitudeKm": 709.543
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": -50.44498,
+        "longitudeDeg": -56.5278,
+        "altitudeKm": 710.065
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": -60.981785,
+        "longitudeDeg": -62.28354,
+        "altitudeKm": 710.402
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": -71.14701,
+        "longitudeDeg": -72.93237,
+        "altitudeKm": 710.597
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": -79.770996,
+        "longitudeDeg": -101.68472,
+        "altitudeKm": 710.686
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": -80.53495,
+        "longitudeDeg": -169.73451,
+        "altitudeKm": 710.691
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": -72.384796,
+        "longitudeDeg": 156.73763,
+        "altitudeKm": 710.613
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": -62.30864,
+        "longitudeDeg": 144.9409,
+        "altitudeKm": 710.434
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": -51.800068,
+        "longitudeDeg": 138.80922,
+        "altitudeKm": 710.118
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": -41.13613,
+        "longitudeDeg": 134.7405,
+        "altitudeKm": 709.622
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": -30.399466,
+        "longitudeDeg": 131.61072,
+        "altitudeKm": 708.901
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": -19.623428,
+        "longitudeDeg": 128.95721,
+        "altitudeKm": 707.923
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": -8.824862,
+        "longitudeDeg": 126.545044,
+        "altitudeKm": 706.676
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": 1.9856,
+        "longitudeDeg": 124.227776,
+        "altitudeKm": 705.174
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": 12.799292,
+        "longitudeDeg": 121.88891,
+        "altitudeKm": 703.464
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": 23.60689,
+        "longitudeDeg": 119.40525,
+        "altitudeKm": 701.625
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": 34.39547,
+        "longitudeDeg": 116.60563,
+        "altitudeKm": 699.759
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": 45.14273,
+        "longitudeDeg": 113.19181,
+        "altitudeKm": 697.988
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": 55.80142,
+        "longitudeDeg": 108.52858,
+        "altitudeKm": 696.436
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": 66.243454,
+        "longitudeDeg": 100.91476,
+        "altitudeKm": 695.223
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": 75.966515,
+        "longitudeDeg": 84.081055,
+        "altitudeKm": 694.443
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": 81.79047,
+        "longitudeDeg": 31.920444,
+        "altitudeKm": 694.16
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": 76.741005,
+        "longitudeDeg": -24.56067,
+        "altitudeKm": 694.398
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": 67.15034,
+        "longitudeDeg": -43.00122,
+        "altitudeKm": 695.136
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": 56.740932,
+        "longitudeDeg": -51.05145,
+        "altitudeKm": 696.315
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": 46.094242,
+        "longitudeDeg": -55.88098,
+        "altitudeKm": 697.841
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": 35.35236,
+        "longitudeDeg": -59.37222,
+        "altitudeKm": 699.598
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": 24.566347,
+        "longitudeDeg": -62.2115,
+        "altitudeKm": 701.461
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": 13.759838,
+        "longitudeDeg": -64.71515,
+        "altitudeKm": 703.308
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": 2.946292,
+        "longitudeDeg": -67.06152,
+        "altitudeKm": 705.032
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": -7.864792,
+        "longitudeDeg": -69.37616,
+        "altitudeKm": 706.555
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": -18.664785,
+        "longitudeDeg": -71.7747,
+        "altitudeKm": 707.826
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": -29.443363,
+        "longitudeDeg": -74.39914,
+        "altitudeKm": 708.827
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": -40.184505,
+        "longitudeDeg": -77.47284,
+        "altitudeKm": 709.569
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": -50.857098,
+        "longitudeDeg": -81.42795,
+        "altitudeKm": 710.083
+      },
+      {
+        "satelliteId": "landsat8",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": -61.385677,
+        "longitudeDeg": -87.29315,
+        "altitudeKm": 710.413
+      }
+    ]
+  },
+  {
+    "satelliteId": "noaa20",
+    "noradId": 43013,
+    "displayName": "NOAA-20",
+    "operatorName": "NOAA",
+    "companyName": "NOAA / NASA",
+    "rating": "B",
+    "riskLabel": "Moderate",
+    "riskSummary": "NOAA-20 stays most credible on orbital safety, but congestion impact is the clearest drag on the final score.",
+    "orbitClass": "SSO",
+    "countryCode": "US",
+    "missionClass": "Operational weather sensing",
+    "serviceRegion": "Global forecast inputs",
+    "tags": [
+      "weather",
+      "operations",
+      "public-service"
+    ],
+    "summary": "NOAA polar weather asset that pairs with Suomi NPP to make the civil-weather fleet feel like a real portfolio.",
+    "demoExplanation": "Sun-synchronous orbit with moderate congestion exposure and a mostly stable trajectory.",
+    "scoreBreakdown": {
+      "total": 77,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. NOAA-20 is carried by orbital safety, while congestion impact is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 23,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "leading",
+          "explanation": "The craft flies in a sun-synchronous lane with repeatable geometry and heavy reuse. NASA's sampled arc is stable enough for a hackathon-scale scorecard. Mission complexity is comparatively contained."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous shells are structurally busy because many imaging and weather missions reuse them. High-latitude coverage adds more lane crossings."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous debris remains persistent because the shell is heavily reused and slowly clears."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 22,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "NOAA gets a local stewardship assumption of 5/5. The SSO regime has a comparatively explainable disposal path in this heuristic. Mission complexity is scored at 2/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#7dd0ff",
+    "latestPosition": {
+      "satelliteId": "noaa20",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": 62.009068,
+      "longitudeDeg": -40.13724,
+      "altitudeKm": 820.241
+    },
+    "trajectory": [
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": 34.489777,
+        "longitudeDeg": -152.1645,
+        "altitudeKm": 823.525
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": 23.999306,
+        "longitudeDeg": -155.06163,
+        "altitudeKm": 825.292
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": 13.486882,
+        "longitudeDeg": -157.63084,
+        "altitudeKm": 827.062
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": 2.966435,
+        "longitudeDeg": -160.04434,
+        "altitudeKm": 828.741
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": -7.552039,
+        "longitudeDeg": -162.42545,
+        "altitudeKm": 830.253
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": -18.05942,
+        "longitudeDeg": -164.88803,
+        "altitudeKm": 831.552
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": -28.54491,
+        "longitudeDeg": -167.56989,
+        "altitudeKm": 832.62
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": -38.992188,
+        "longitudeDeg": -170.68213,
+        "altitudeKm": 833.458
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": -49.37075,
+        "longitudeDeg": -174.6183,
+        "altitudeKm": 834.093
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": -59.61073,
+        "longitudeDeg": 179.73477,
+        "altitudeKm": 834.557
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": -69.50556,
+        "longitudeDeg": 169.85245,
+        "altitudeKm": 834.886
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": -78.16026,
+        "longitudeDeg": 146.07076,
+        "altitudeKm": 835.112
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": -80.840034,
+        "longitudeDeg": 85.962036,
+        "altitudeKm": 835.251
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": -74.15182,
+        "longitudeDeg": 44.940926,
+        "altitudeKm": 835.304
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": -64.662834,
+        "longitudeDeg": 30.276012,
+        "altitudeKm": 835.253
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": -54.554596,
+        "longitudeDeg": 23.022423,
+        "altitudeKm": 835.067
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": -44.2349,
+        "longitudeDeg": 18.392218,
+        "altitudeKm": 834.705
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": -33.81977,
+        "longitudeDeg": 14.933783,
+        "altitudeKm": 834.123
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": -23.354164,
+        "longitudeDeg": 12.069509,
+        "altitudeKm": 833.287
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": -12.859777,
+        "longitudeDeg": 9.517135,
+        "altitudeKm": 832.178
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": -2.3494,
+        "longitudeDeg": 7.110345,
+        "altitudeKm": 830.8
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": 8.167483,
+        "longitudeDeg": 4.727862,
+        "altitudeKm": 829.186
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": 18.681768,
+        "longitudeDeg": 2.255313,
+        "altitudeKm": 827.395
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": 29.18213,
+        "longitudeDeg": -0.44846,
+        "altitudeKm": 825.517
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": 39.650993,
+        "longitudeDeg": -3.6033,
+        "altitudeKm": 823.657
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": 50.055237,
+        "longitudeDeg": -7.62518,
+        "altitudeKm": 821.932
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": 60.318466,
+        "longitudeDeg": -13.46768,
+        "altitudeKm": 820.459
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": 70.210945,
+        "longitudeDeg": -23.91022,
+        "altitudeKm": 819.341
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": 78.7012,
+        "longitudeDeg": -49.84656,
+        "altitudeKm": 818.657
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": 80.55023,
+        "longitudeDeg": -111.9513,
+        "altitudeKm": 818.455
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": 73.370186,
+        "longitudeDeg": -149.63017,
+        "altitudeKm": 818.746
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": 63.744305,
+        "longitudeDeg": -163.26427,
+        "altitudeKm": 819.502
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": 53.564205,
+        "longitudeDeg": -170.18173,
+        "altitudeKm": 820.662
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": 43.193092,
+        "longitudeDeg": -174.66891,
+        "altitudeKm": 822.136
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": 32.7383,
+        "longitudeDeg": -178.0562,
+        "altitudeKm": 823.818
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": 22.242893,
+        "longitudeDeg": 179.11737,
+        "altitudeKm": 825.593
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": 11.728322,
+        "longitudeDeg": 176.58421,
+        "altitudeKm": 827.355
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": 1.207572,
+        "longitudeDeg": 174.18405,
+        "altitudeKm": 829.01
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": -9.309684,
+        "longitudeDeg": 171.79747,
+        "altitudeKm": 830.49
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": -19.814234,
+        "longitudeDeg": 169.30904,
+        "altitudeKm": 831.752
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": -30.294695,
+        "longitudeDeg": 166.573,
+        "altitudeKm": 832.779
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": -40.733192,
+        "longitudeDeg": 163.35805,
+        "altitudeKm": 833.582
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": -51.09522,
+        "longitudeDeg": 159.2196,
+        "altitudeKm": 834.185
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": -61.298683,
+        "longitudeDeg": 153.12039,
+        "altitudeKm": 834.624
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": -71.08774,
+        "longitudeDeg": 141.96645,
+        "altitudeKm": 834.934
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": -79.266396,
+        "longitudeDeg": 113.46946,
+        "altitudeKm": 835.144
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": -80.18646,
+        "longitudeDeg": 50.435913,
+        "altitudeKm": 835.268
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": -72.65255,
+        "longitudeDeg": 16.115177,
+        "altitudeKm": 835.305
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": -62.997856,
+        "longitudeDeg": 3.382864,
+        "altitudeKm": 835.233
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": -52.83946,
+        "longitudeDeg": -3.25027,
+        "altitudeKm": 835.02
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": -42.49875,
+        "longitudeDeg": -7.62024,
+        "altitudeKm": 834.623
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": -32.072975,
+        "longitudeDeg": -10.95084,
+        "altitudeKm": 834
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": -21.601389,
+        "longitudeDeg": -13.74777,
+        "altitudeKm": 833.118
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": -11.103562,
+        "longitudeDeg": -16.26605,
+        "altitudeKm": 831.963
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": -0.59147,
+        "longitudeDeg": -18.66092,
+        "altitudeKm": 830.542
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": 9.92565,
+        "longitudeDeg": -21.05023,
+        "altitudeKm": 828.892
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": 20.43851,
+        "longitudeDeg": -23.5503,
+        "altitudeKm": 827.081
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": 30.935102,
+        "longitudeDeg": -26.3109,
+        "altitudeKm": 825.197
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": 41.396137,
+        "longitudeDeg": -29.5735,
+        "altitudeKm": 823.352
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": 51.78409,
+        "longitudeDeg": -33.80923,
+        "altitudeKm": 821.662
+      },
+      {
+        "satelliteId": "noaa20",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": 62.009068,
+        "longitudeDeg": -40.13724,
+        "altitudeKm": 820.241
+      }
+    ]
+  },
+  {
+    "satelliteId": "suomi",
+    "noradId": 37849,
+    "displayName": "Suomi NPP",
+    "operatorName": "NOAA",
+    "companyName": "NOAA / NASA",
+    "rating": "B",
+    "riskLabel": "Moderate",
+    "riskSummary": "Suomi NPP stays most credible on orbital safety, but congestion impact is the clearest drag on the final score.",
+    "orbitClass": "SSO",
+    "countryCode": "US",
+    "missionClass": "Weather and climate monitoring",
+    "serviceRegion": "Global forecast inputs",
+    "tags": [
+      "weather",
+      "climate",
+      "public-service"
+    ],
+    "summary": "NOAA civil-weather mission that shows how operational forecasting assets compare with pure science platforms.",
+    "demoExplanation": "Sun-synchronous orbit with moderate congestion exposure and a mostly stable trajectory.",
+    "scoreBreakdown": {
+      "total": 77,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. Suomi NPP is carried by orbital safety, while congestion impact is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 23,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "leading",
+          "explanation": "The craft flies in a sun-synchronous lane with repeatable geometry and heavy reuse. NASA's sampled arc is stable enough for a hackathon-scale scorecard. Mission complexity is comparatively contained."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous shells are structurally busy because many imaging and weather missions reuse them. High-latitude coverage adds more lane crossings."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous debris remains persistent because the shell is heavily reused and slowly clears."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 22,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "NOAA gets a local stewardship assumption of 5/5. The SSO regime has a comparatively explainable disposal path in this heuristic. Mission complexity is scored at 2/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#a5c8ff",
+    "latestPosition": {
+      "satelliteId": "suomi",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": 41.048885,
+      "longitudeDeg": 165.72705,
+      "altitudeKm": 823.09
+    },
+    "trajectory": [
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": -39.410698,
+        "longitudeDeg": -164.31862,
+        "altitudeKm": 832.795
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": -49.786686,
+        "longitudeDeg": -168.30852,
+        "altitudeKm": 833.324
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": -60.0192,
+        "longitudeDeg": -174.0698,
+        "altitudeKm": 833.715
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": -69.88984,
+        "longitudeDeg": 175.7421,
+        "altitudeKm": 834.008
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": -78.43568,
+        "longitudeDeg": 150.87022,
+        "altitudeKm": 834.234
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": -80.687546,
+        "longitudeDeg": 89.8644,
+        "altitudeKm": 834.409
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": -73.7721,
+        "longitudeDeg": 50.59185,
+        "altitudeKm": 834.531
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": -64.23953,
+        "longitudeDeg": 36.432068,
+        "altitudeKm": 834.58
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": -54.117954,
+        "longitudeDeg": 29.332504,
+        "altitudeKm": 834.52
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": -43.792435,
+        "longitudeDeg": 24.763634,
+        "altitudeKm": 834.305
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": -33.37438,
+        "longitudeDeg": 21.333502,
+        "altitudeKm": 833.887
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": -22.907415,
+        "longitudeDeg": 18.482754,
+        "altitudeKm": 833.226
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": -12.412795,
+        "longitudeDeg": 15.93587,
+        "altitudeKm": 832.297
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": -1.903152,
+        "longitudeDeg": 13.529185,
+        "altitudeKm": 831.099
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": 8.612081,
+        "longitudeDeg": 11.14216,
+        "altitudeKm": 829.659
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": 19.123755,
+        "longitudeDeg": 8.65983,
+        "altitudeKm": 828.032
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": 29.620396,
+        "longitudeDeg": 5.93883,
+        "altitudeKm": 826.303
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": 40.084038,
+        "longitudeDeg": 2.753927,
+        "altitudeKm": 824.571
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": 50.480495,
+        "longitudeDeg": -1.32413,
+        "altitudeKm": 822.951
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": 60.73017,
+        "longitudeDeg": -7.28735,
+        "altitudeKm": 821.554
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": 70.59044,
+        "longitudeDeg": -18.05875,
+        "altitudeKm": 820.481
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": 78.95276,
+        "longitudeDeg": -45.17194,
+        "altitudeKm": 819.81
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": 80.367516,
+        "longitudeDeg": -107.80406,
+        "altitudeKm": 819.586
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": 72.999916,
+        "longitudeDeg": -143.8681,
+        "altitudeKm": 819.82
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": 63.342007,
+        "longitudeDeg": -157.06775,
+        "altitudeKm": 820.486
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": 53.154686,
+        "longitudeDeg": -163.8509,
+        "altitudeKm": 821.525
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": 42.782074,
+        "longitudeDeg": -168.28433,
+        "altitudeKm": 822.851
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": 32.327442,
+        "longitudeDeg": -171.64693,
+        "altitudeKm": 824.362
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": 21.832613,
+        "longitudeDeg": -174.46185,
+        "altitudeKm": 825.951
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": 11.318604,
+        "longitudeDeg": -176.99074,
+        "altitudeKm": 827.519
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": 0.798232,
+        "longitudeDeg": -179.39162,
+        "altitudeKm": 828.978
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": -9.718843,
+        "longitudeDeg": 178.21666,
+        "altitudeKm": 830.268
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": -20.223307,
+        "longitudeDeg": 175.71791,
+        "altitudeKm": 831.353
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": -30.703516,
+        "longitudeDeg": 172.96399,
+        "altitudeKm": 832.224
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": -41.141056,
+        "longitudeDeg": 169.71785,
+        "altitudeKm": 832.896
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": -51.50011,
+        "longitudeDeg": 165.52048,
+        "altitudeKm": 833.399
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": -61.694855,
+        "longitudeDeg": 159.292,
+        "altitudeKm": 833.772
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": -71.45442,
+        "longitudeDeg": 147.7754,
+        "altitudeKm": 834.053
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": -79.491585,
+        "longitudeDeg": 117.97424,
+        "altitudeKm": 834.27
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": -79.97109,
+        "longitudeDeg": 54.750698,
+        "altitudeKm": 834.436
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": -72.26972,
+        "longitudeDeg": 21.922075,
+        "altitudeKm": 834.547
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": -62.581333,
+        "longitudeDeg": 9.58479,
+        "altitudeKm": 834.581
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": -52.411804,
+        "longitudeDeg": 3.078409,
+        "altitudeKm": 834.499
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": -42.066048,
+        "longitudeDeg": -1.23947,
+        "altitudeKm": 834.252
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": -31.637733,
+        "longitudeDeg": -4.54572,
+        "altitudeKm": 833.796
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": -21.165037,
+        "longitudeDeg": -7.33115,
+        "altitudeKm": 833.091
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": -10.667181,
+        "longitudeDeg": -9.84515,
+        "altitudeKm": 832.116
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": -0.155994,
+        "longitudeDeg": -12.24075,
+        "altitudeKm": 830.875
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": 10.359309,
+        "longitudeDeg": -14.63535,
+        "altitudeKm": 829.399
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": 20.86939,
+        "longitudeDeg": -17.14606,
+        "altitudeKm": 827.749
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": 31.362066,
+        "longitudeDeg": -19.92514,
+        "altitudeKm": 826.011
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": 41.817596,
+        "longitudeDeg": -23.22015,
+        "altitudeKm": 824.289
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": 52.19724,
+        "longitudeDeg": -27.51758,
+        "altitudeKm": 822.699
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": 62.407227,
+        "longitudeDeg": -33.98233,
+        "altitudeKm": 821.349
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": 72.145164,
+        "longitudeDeg": -46.2163,
+        "altitudeKm": 820.338
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": 79.92232,
+        "longitudeDeg": -78.7735,
+        "altitudeKm": 819.738
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": 79.522865,
+        "longitudeDeg": -142.23866,
+        "altitudeKm": 819.591
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": 71.46746,
+        "longitudeDeg": -172.28267,
+        "altitudeKm": 819.899
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": 61.670685,
+        "longitudeDeg": 176.16086,
+        "altitudeKm": 820.632
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": 51.439724,
+        "longitudeDeg": 169.9252,
+        "altitudeKm": 821.725
+      },
+      {
+        "satelliteId": "suomi",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": 41.048885,
+        "longitudeDeg": 165.72705,
+        "altitudeKm": 823.09
+      }
+    ]
+  },
+  {
+    "satelliteId": "aqua",
+    "noradId": 27424,
+    "displayName": "Aqua",
+    "operatorName": "NASA",
+    "companyName": "NASA",
+    "rating": "B",
+    "riskLabel": "Moderate",
+    "riskSummary": "Aqua stays most credible on orbital safety, but congestion impact is the clearest drag on the final score.",
+    "orbitClass": "SSO",
+    "countryCode": "US",
+    "missionClass": "Earth system science",
+    "serviceRegion": "Global climate and hydrology monitoring",
+    "tags": [
+      "climate",
+      "science",
+      "earth-observation"
+    ],
+    "summary": "NASA climate observatory that broadens the fleet beyond weather and crewed operations.",
+    "demoExplanation": "Sun-synchronous orbit with moderate congestion exposure and a mostly stable trajectory.",
+    "scoreBreakdown": {
+      "total": 74,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. Aqua is carried by orbital safety, while congestion impact is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 22,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "The craft flies in a sun-synchronous lane with repeatable geometry and heavy reuse. NASA's sampled arc is stable enough for a hackathon-scale scorecard. Mission complexity is comparatively contained."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous shells are structurally busy because many imaging and weather missions reuse them. High-latitude coverage adds more lane crossings."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 16,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "Sun-synchronous debris remains persistent because the shell is heavily reused and slowly clears."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 20,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "NASA gets a local stewardship assumption of 4/5. The SSO regime has a comparatively explainable disposal path in this heuristic. Mission complexity is scored at 2/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#7fe6ff",
+    "latestPosition": {
+      "satelliteId": "aqua",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": 8.242355,
+      "longitudeDeg": 2.804877,
+      "altitudeKm": 688.692
+    },
+    "trajectory": [
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": 69.19319,
+        "longitudeDeg": 26.090216,
+        "altitudeKm": 679.571
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": 78.32336,
+        "longitudeDeg": 2.499728,
+        "altitudeKm": 678.911
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": 81.10416,
+        "longitudeDeg": -61.3375,
+        "altitudeKm": 678.748
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": 73.83424,
+        "longitudeDeg": -102.49304,
+        "altitudeKm": 679.096
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": 63.868374,
+        "longitudeDeg": -116.39717,
+        "altitudeKm": 679.923
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": 53.345524,
+        "longitudeDeg": -123.23889,
+        "altitudeKm": 681.158
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": 42.63862,
+        "longitudeDeg": -127.63104,
+        "altitudeKm": 682.702
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": 31.853018,
+        "longitudeDeg": -130.93938,
+        "altitudeKm": 684.436
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": 21.030113,
+        "longitudeDeg": -133.70488,
+        "altitudeKm": 686.236
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": 10.190394,
+        "longitudeDeg": -136.19362,
+        "altitudeKm": 687.984
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": -0.653672,
+        "longitudeDeg": -138.56598,
+        "altitudeKm": 689.584
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": -11.492559,
+        "longitudeDeg": -140.94473,
+        "altitudeKm": 690.969
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": -22.316776,
+        "longitudeDeg": -143.4545,
+        "altitudeKm": 692.1
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": -33.11385,
+        "longitudeDeg": -146.26257,
+        "altitudeKm": 692.972
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": -43.862816,
+        "longitudeDeg": -149.65248,
+        "altitudeKm": 693.606
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": -54.519825,
+        "longitudeDeg": -154.21207,
+        "altitudeKm": 694.039
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": -64.96872,
+        "longitudeDeg": -161.46082,
+        "altitudeKm": 694.317
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": -74.778244,
+        "longitudeDeg": -176.69707,
+        "altitudeKm": 694.483
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": -81.38802,
+        "longitudeDeg": 137.58382,
+        "altitudeKm": 694.569
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": -77.5938,
+        "longitudeDeg": 77.10381,
+        "altitudeKm": 694.586
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": -68.29849,
+        "longitudeDeg": 55.880325,
+        "altitudeKm": 694.525
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": -57.978893,
+        "longitudeDeg": 46.9813,
+        "altitudeKm": 694.359
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": -47.37148,
+        "longitudeDeg": 41.791313,
+        "altitudeKm": 694.046
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": -36.646873,
+        "longitudeDeg": 38.10772,
+        "altitudeKm": 693.536
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": -25.863676,
+        "longitudeDeg": 35.14934,
+        "altitudeKm": 692.787
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": -15.047921,
+        "longitudeDeg": 32.56393,
+        "altitudeKm": 691.769
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": -4.213985,
+        "longitudeDeg": 30.157207,
+        "altitudeKm": 690.479
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": 6.628105,
+        "longitudeDeg": 27.795855,
+        "altitudeKm": 688.942
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": 17.469172,
+        "longitudeDeg": 25.360449,
+        "altitudeKm": 687.216
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": 28.298151,
+        "longitudeDeg": 22.708315,
+        "altitudeKm": 685.39
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": 39.09809,
+        "longitudeDeg": 19.619413,
+        "altitudeKm": 683.577
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": 49.83694,
+        "longitudeDeg": 15.674791,
+        "altitudeKm": 681.9
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": 60.43952,
+        "longitudeDeg": 9.894503,
+        "altitudeKm": 680.485
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": 70.67104,
+        "longitudeDeg": -0.6946,
+        "altitudeKm": 679.441
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": 79.38588,
+        "longitudeDeg": -28.68552,
+        "altitudeKm": 678.853
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": 80.45571,
+        "longitudeDeg": -95.46704,
+        "altitudeKm": 678.767
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": 72.42368,
+        "longitudeDeg": -130.09032,
+        "altitudeKm": 679.19
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": 62.321922,
+        "longitudeDeg": -142.31546,
+        "altitudeKm": 680.083
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": 51.759346,
+        "longitudeDeg": -148.6346,
+        "altitudeKm": 681.371
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": 41.0365,
+        "longitudeDeg": -152.81018,
+        "altitudeKm": 682.953
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": 30.243477,
+        "longitudeDeg": -156.01326,
+        "altitudeKm": 684.704
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": 19.417053,
+        "longitudeDeg": -158.7244,
+        "altitudeKm": 686.503
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": 8.576014,
+        "longitudeDeg": -161.1871,
+        "altitudeKm": 688.234
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": -2.267851,
+        "longitudeDeg": -163.55298,
+        "altitudeKm": 689.807
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": -13.105184,
+        "longitudeDeg": -165.94283,
+        "altitudeKm": 691.155
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": -23.926268,
+        "longitudeDeg": -168.48468,
+        "altitudeKm": 692.248
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": -34.717823,
+        "longitudeDeg": -171.35707,
+        "altitudeKm": 693.082
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": -45.45677,
+        "longitudeDeg": -174.87206,
+        "altitudeKm": 693.683
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": -56.093235,
+        "longitudeDeg": -179.69653,
+        "altitudeKm": 694.09
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": -66.48953,
+        "longitudeDeg": 172.37846,
+        "altitudeKm": 694.349
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": -76.09981,
+        "longitudeDeg": 154.77238,
+        "altitudeKm": 694.502
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": -81.57351,
+        "longitudeDeg": 101.90529,
+        "altitudeKm": 694.576
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": -76.35898,
+        "longitudeDeg": 47.64534,
+        "altitudeKm": 694.582
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": -66.79549,
+        "longitudeDeg": 29.495735,
+        "altitudeKm": 694.508
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": -56.41149,
+        "longitudeDeg": 21.420446,
+        "altitudeKm": 694.322
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": -45.780273,
+        "longitudeDeg": 16.538418,
+        "altitudeKm": 693.982
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": -35.04443,
+        "longitudeDeg": 12.996607,
+        "altitudeKm": 693.439
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": -24.255142,
+        "longitudeDeg": 10.110534,
+        "altitudeKm": 692.651
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": -13.435925,
+        "longitudeDeg": 7.561842,
+        "altitudeKm": 691.592
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": -2.600184,
+        "longitudeDeg": 5.169565,
+        "altitudeKm": 690.263
+      },
+      {
+        "satelliteId": "aqua",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": 8.242355,
+        "longitudeDeg": 2.804877,
+        "altitudeKm": 688.692
+      }
+    ]
+  },
+  {
+    "satelliteId": "iss",
+    "noradId": 25544,
+    "displayName": "ISS",
+    "operatorName": "NASA",
+    "companyName": "NASA / Roscosmos",
+    "rating": "C",
+    "riskLabel": "Elevated",
+    "riskSummary": "ISS stays most credible on sustainability / end-of-life, but congestion impact is the clearest drag on the final score.",
+    "orbitClass": "LEO",
+    "countryCode": "US",
+    "missionClass": "Crewed research platform",
+    "serviceRegion": "Low Earth orbital corridor",
+    "tags": [
+      "crew",
+      "research",
+      "high-traffic"
+    ],
+    "summary": "NASA-led crewed platform that anchors the demo's busiest LEO lane and highest-complexity operations profile.",
+    "demoExplanation": "Low orbit with high congestion exposure and a mostly stable trajectory.",
+    "scoreBreakdown": {
+      "total": 66,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. ISS is carried by sustainability / end-of-life, while congestion impact is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 19,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "The craft remains in low Earth orbit, where maneuver timing matters most. NASA's sampled arc is stable enough for a hackathon-scale scorecard. Mission complexity is high, so the model assumes less operational slack."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 13,
+          "maxScore": 25,
+          "assessmentLabel": "High Risk",
+          "assessmentTone": "watch",
+          "explanation": "Low Earth orbit carries the highest raw traffic volume in this scorecard. Very low altitude keeps the craft inside the busiest shells."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 14,
+          "maxScore": 25,
+          "assessmentLabel": "High Risk",
+          "assessmentTone": "watch",
+          "explanation": "LEO debris exposure is driven by dense traffic and frequent conjunction management. The local model applies an extra debris penalty for this lane."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 20,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "NASA gets a local stewardship assumption of 5/5. The LEO regime has a comparatively explainable disposal path in this heuristic. Mission complexity is scored at 5/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#79c6ff",
+    "latestPosition": {
+      "satelliteId": "iss",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": 43.388504,
+      "longitudeDeg": 23.631918,
+      "altitudeKm": 419.218
+    },
+    "trajectory": [
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": 51.217644,
+        "longitudeDeg": 101.24832,
+        "altitudeKm": 416.996
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": 51.269146,
+        "longitudeDeg": 119.11562,
+        "altitudeKm": 416.265
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": 48.470066,
+        "longitudeDeg": 135.92218,
+        "altitudeKm": 415.856
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": 43.342278,
+        "longitudeDeg": 150.21365,
+        "altitudeKm": 415.764
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": 36.57528,
+        "longitudeDeg": 161.8349,
+        "altitudeKm": 415.958
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": 28.743862,
+        "longitudeDeg": 171.32,
+        "altitudeKm": 416.386
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": 20.251139,
+        "longitudeDeg": 179.31691,
+        "altitudeKm": 416.98
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": 11.370467,
+        "longitudeDeg": -173.61833,
+        "altitudeKm": 417.672
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": 2.297175,
+        "longitudeDeg": -167.03513,
+        "altitudeKm": 418.402
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": -6.811518,
+        "longitudeDeg": -160.54683,
+        "altitudeKm": 419.125
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": -15.805797,
+        "longitudeDeg": -153.78003,
+        "altitudeKm": 419.815
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": -24.514523,
+        "longitudeDeg": -146.32367,
+        "altitudeKm": 420.47
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": -32.710976,
+        "longitudeDeg": -137.68076,
+        "altitudeKm": 421.099
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": -40.06702,
+        "longitudeDeg": -127.2441,
+        "altitudeKm": 421.726
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": -46.100964,
+        "longitudeDeg": -114.37973,
+        "altitudeKm": 422.371
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": -50.16764,
+        "longitudeDeg": -98.79895,
+        "altitudeKm": 423.05
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": -51.614567,
+        "longitudeDeg": -81.2529,
+        "altitudeKm": 423.763
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": -50.1499,
+        "longitudeDeg": -63.71783,
+        "altitudeKm": 424.49
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": -46.072098,
+        "longitudeDeg": -48.16248,
+        "altitudeKm": 425.191
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": -40.036034,
+        "longitudeDeg": -35.3256,
+        "altitudeKm": 425.81
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": -32.68591,
+        "longitudeDeg": -24.91254,
+        "altitudeKm": 426.281
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": -24.501453,
+        "longitudeDeg": -16.28876,
+        "altitudeKm": 426.538
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": -15.808852,
+        "longitudeDeg": -8.8485,
+        "altitudeKm": 426.521
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": -6.833058,
+        "longitudeDeg": -2.0964,
+        "altitudeKm": 426.194
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": 2.256461,
+        "longitudeDeg": 4.376965,
+        "altitudeKm": 425.546
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": 11.311581,
+        "longitudeDeg": 10.943336,
+        "altitudeKm": 424.6
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": 20.176926,
+        "longitudeDeg": 17.98746,
+        "altitudeKm": 423.407
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": 28.659311,
+        "longitudeDeg": 25.957537,
+        "altitudeKm": 422.049
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": 36.488068,
+        "longitudeDeg": 35.407112,
+        "altitudeKm": 420.624
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": 43.263344,
+        "longitudeDeg": 46.983036,
+        "altitudeKm": 419.241
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": 48.413414,
+        "longitudeDeg": 61.224808,
+        "altitudeKm": 418
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": 51.248524,
+        "longitudeDeg": 77.995476,
+        "altitudeKm": 416.988
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": 51.23912,
+        "longitudeDeg": 95.863144,
+        "altitudeKm": 416.266
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": 48.385433,
+        "longitudeDeg": 112.627686,
+        "altitudeKm": 415.864
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": 43.21698,
+        "longitudeDeg": 126.86185,
+        "altitudeKm": 415.779
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": 36.42286,
+        "longitudeDeg": 138.4325,
+        "altitudeKm": 415.979
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": 28.57431,
+        "longitudeDeg": 147.88051,
+        "altitudeKm": 416.41
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": 20.071215,
+        "longitudeDeg": 155.85294,
+        "altitudeKm": 417.006
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": 11.184819,
+        "longitudeDeg": 162.90352,
+        "altitudeKm": 417.696
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": 2.109309,
+        "longitudeDeg": 169.48097,
+        "altitudeKm": 418.424
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": -6.998544,
+        "longitudeDeg": 175.97119,
+        "altitudeKm": 419.143
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": -15.988784,
+        "longitudeDeg": -177.25217,
+        "altitudeKm": 419.829
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": -24.689507,
+        "longitudeDeg": -169.77676,
+        "altitudeKm": 420.48
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": -32.8724,
+        "longitudeDeg": -161.10335,
+        "altitudeKm": 421.105
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": -40.206684,
+        "longitudeDeg": -150.62276,
+        "altitudeKm": 421.729
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": -46.207073,
+        "longitudeDeg": -137.703,
+        "altitudeKm": 422.372
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": -50.225826,
+        "longitudeDeg": -122.0693,
+        "altitudeKm": 423.048
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": -51.61374,
+        "longitudeDeg": -104.50047,
+        "altitudeKm": 423.759
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": -50.090244,
+        "longitudeDeg": -86.98932,
+        "altitudeKm": 424.485
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": -45.964924,
+        "longitudeDeg": -71.4872,
+        "altitudeKm": 425.184
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": -39.895664,
+        "longitudeDeg": -58.70547,
+        "altitudeKm": 425.801
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": -32.524036,
+        "longitudeDeg": -48.33594,
+        "altitudeKm": 426.269
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": -24.326183,
+        "longitudeDeg": -39.7423,
+        "altitudeKm": 426.521
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": -15.625671,
+        "longitudeDeg": -32.32086,
+        "altitudeKm": 426.499
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": -6.645897,
+        "longitudeDeg": -25.57843,
+        "altitudeKm": 426.168
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": 2.444422,
+        "longitudeDeg": -19.1068,
+        "altitudeKm": 425.517
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": 11.497293,
+        "longitudeDeg": -12.53458,
+        "altitudeKm": 424.568
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": 20.356882,
+        "longitudeDeg": -5.47617,
+        "altitudeKm": 423.375
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": 28.828857,
+        "longitudeDeg": 2.518502,
+        "altitudeKm": 422.018
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": 36.640427,
+        "longitudeDeg": 12.005301,
+        "altitudeKm": 420.597
+      },
+      {
+        "satelliteId": "iss",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": 43.388504,
+        "longitudeDeg": 23.631918,
+        "altitudeKm": 419.218
+      }
+    ]
+  },
+  {
+    "satelliteId": "swarma",
+    "noradId": 39451,
+    "displayName": "Swarm A",
+    "operatorName": "ESA",
+    "companyName": "ESA",
+    "rating": "C",
+    "riskLabel": "Elevated",
+    "riskSummary": "Swarm A stays most credible on sustainability / end-of-life, but congestion impact is the clearest drag on the final score.",
+    "orbitClass": "LEO",
+    "countryCode": "EU",
+    "missionClass": "Geomagnetic field monitoring",
+    "serviceRegion": "Global magnetic field sampling",
+    "tags": [
+      "science",
+      "polar",
+      "geomagnetic"
+    ],
+    "summary": "ESA polar science mission that adds a visibly non-US operator and a lower-scoring high-latitude lane.",
+    "demoExplanation": "Low orbit with high congestion exposure and a mostly stable trajectory.",
+    "scoreBreakdown": {
+      "total": 65,
+      "maxScore": 100,
+      "explanation": "Each factor contributes up to 25 points. Swarm A is carried by sustainability / end-of-life, while congestion impact is the main reason it does not rank higher.",
+      "factors": [
+        {
+          "key": "orbital-safety",
+          "label": "Orbital safety",
+          "score": 19,
+          "maxScore": 25,
+          "assessmentLabel": "Moderate",
+          "assessmentTone": "mixed",
+          "explanation": "The craft remains in low Earth orbit, where maneuver timing matters most. NASA's sampled arc is stable enough for a hackathon-scale scorecard. Mission complexity is moderate, which trims some of the safety headroom."
+        },
+        {
+          "key": "congestion-impact",
+          "label": "Congestion impact",
+          "score": 12,
+          "maxScore": 25,
+          "assessmentLabel": "High Risk",
+          "assessmentTone": "watch",
+          "explanation": "Low Earth orbit carries the highest raw traffic volume in this scorecard. High-latitude coverage adds more lane crossings. Very low altitude keeps the craft inside the busiest shells."
+        },
+        {
+          "key": "debris-exposure",
+          "label": "Debris exposure",
+          "score": 14,
+          "maxScore": 25,
+          "assessmentLabel": "High Risk",
+          "assessmentTone": "watch",
+          "explanation": "LEO debris exposure is driven by dense traffic and frequent conjunction management. The local model applies an extra debris penalty for this lane."
+        },
+        {
+          "key": "sustainability",
+          "label": "Sustainability / end-of-life",
+          "score": 20,
+          "maxScore": 25,
+          "assessmentLabel": "Good",
+          "assessmentTone": "strong",
+          "explanation": "ESA gets a local stewardship assumption of 4/5. The LEO regime has a comparatively explainable disposal path in this heuristic. Mission complexity is scored at 3/5, which changes how much operational slack the model assumes."
+        }
+      ]
+    },
+    "dataQuality": {
+      "label": "High",
+      "confidenceScore": 0.96,
+      "summary": "NASA SSC returned 181 source samples from 2026-03-20T12:00:00.000Z to 2026-03-20T15:00:00.000Z. 61 points are kept in the demo trajectory snapshot.",
+      "sourceSampleCount": 181,
+      "trajectoryPointCount": 61,
+      "windowStartIso": "2026-03-20T12:00:00.000Z",
+      "windowEndIso": "2026-03-20T15:00:00.000Z"
+    },
+    "highlightColor": "#ffd27b",
+    "latestPosition": {
+      "satelliteId": "swarma",
+      "timestampIso": "2026-03-20T15:00:00.000Z",
+      "latitudeDeg": -86.18294,
+      "longitudeDeg": -89.61765,
+      "altitudeKm": 429.346
+    },
+    "trajectory": [
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:00:00.000Z",
+        "latitudeDeg": -69.181595,
+        "longitudeDeg": 84.058975,
+        "altitudeKm": 429.178
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:03:00.000Z",
+        "latitudeDeg": -57.66978,
+        "longitudeDeg": 86.130226,
+        "altitudeKm": 428.845
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:06:00.000Z",
+        "latitudeDeg": -46.12125,
+        "longitudeDeg": 86.825584,
+        "altitudeKm": 428.288
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:09:00.000Z",
+        "latitudeDeg": -34.555202,
+        "longitudeDeg": 87.01354,
+        "altitudeKm": 427.454
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:12:00.000Z",
+        "latitudeDeg": -22.977272,
+        "longitudeDeg": 86.969376,
+        "altitudeKm": 426.298
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:15:00.000Z",
+        "latitudeDeg": -11.389805,
+        "longitudeDeg": 86.812256,
+        "altitudeKm": 424.803
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:18:00.000Z",
+        "latitudeDeg": 0.205706,
+        "longitudeDeg": 86.6082,
+        "altitudeKm": 422.984
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:21:00.000Z",
+        "latitudeDeg": 11.807855,
+        "longitudeDeg": 86.40527,
+        "altitudeKm": 420.9
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:24:00.000Z",
+        "latitudeDeg": 23.414953,
+        "longitudeDeg": 86.25201,
+        "altitudeKm": 418.653
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:27:00.000Z",
+        "latitudeDeg": 35.024662,
+        "longitudeDeg": 86.21616,
+        "altitudeKm": 416.379
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:30:00.000Z",
+        "latitudeDeg": 46.6332,
+        "longitudeDeg": 86.42189,
+        "altitudeKm": 414.24
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:33:00.000Z",
+        "latitudeDeg": 58.232815,
+        "longitudeDeg": 87.16061,
+        "altitudeKm": 412.401
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:36:00.000Z",
+        "latitudeDeg": 69.80041,
+        "longitudeDeg": 89.37559,
+        "altitudeKm": 411.016
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:39:00.000Z",
+        "latitudeDeg": 81.19659,
+        "longitudeDeg": 98.88355,
+        "altitudeKm": 410.203
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:42:00.000Z",
+        "latitudeDeg": 85.79274,
+        "longitudeDeg": -138.84282,
+        "altitudeKm": 410.035
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:45:00.000Z",
+        "latitudeDeg": 74.87876,
+        "longitudeDeg": -110.13126,
+        "altitudeKm": 410.525
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:48:00.000Z",
+        "latitudeDeg": 63.3488,
+        "longitudeDeg": -106.27005,
+        "altitudeKm": 411.628
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:51:00.000Z",
+        "latitudeDeg": 51.75809,
+        "longitudeDeg": -105.08041,
+        "altitudeKm": 413.247
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:54:00.000Z",
+        "latitudeDeg": 40.151585,
+        "longitudeDeg": -104.69373,
+        "altitudeKm": 415.241
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T12:57:00.000Z",
+        "latitudeDeg": 28.541168,
+        "longitudeDeg": -104.64395,
+        "altitudeKm": 417.451
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:00:00.000Z",
+        "latitudeDeg": 16.931885,
+        "longitudeDeg": -104.75577,
+        "altitudeKm": 419.711
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:03:00.000Z",
+        "latitudeDeg": 5.326583,
+        "longitudeDeg": -104.94333,
+        "altitudeKm": 421.874
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:06:00.000Z",
+        "latitudeDeg": -6.272788,
+        "longitudeDeg": -105.15245,
+        "altitudeKm": 423.819
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:09:00.000Z",
+        "latitudeDeg": -17.864702,
+        "longitudeDeg": -105.3368,
+        "altitudeKm": 425.471
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:12:00.000Z",
+        "latitudeDeg": -29.447737,
+        "longitudeDeg": -105.44113,
+        "altitudeKm": 426.794
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:15:00.000Z",
+        "latitudeDeg": -41.020046,
+        "longitudeDeg": -105.37631,
+        "altitudeKm": 427.791
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:18:00.000Z",
+        "latitudeDeg": -52.577938,
+        "longitudeDeg": -104.95804,
+        "altitudeKm": 428.495
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:21:00.000Z",
+        "latitudeDeg": -64.11074,
+        "longitudeDeg": -103.68787,
+        "altitudeKm": 428.959
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:24:00.000Z",
+        "latitudeDeg": -75.5712,
+        "longitudeDeg": -99.5036,
+        "altitudeKm": 429.23
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:27:00.000Z",
+        "latitudeDeg": -86.26382,
+        "longitudeDeg": -65.04718,
+        "altitudeKm": 429.349
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:30:00.000Z",
+        "latitudeDeg": -80.64897,
+        "longitudeDeg": 52.051765,
+        "altitudeKm": 429.333
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:33:00.000Z",
+        "latitudeDeg": -69.29549,
+        "longitudeDeg": 60.6787,
+        "altitudeKm": 429.175
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:36:00.000Z",
+        "latitudeDeg": -57.784252,
+        "longitudeDeg": 62.773815,
+        "altitudeKm": 428.842
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:39:00.000Z",
+        "latitudeDeg": -46.235924,
+        "longitudeDeg": 63.476784,
+        "altitudeKm": 428.285
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:42:00.000Z",
+        "latitudeDeg": -34.66998,
+        "longitudeDeg": 63.668007,
+        "altitudeKm": 427.452
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:45:00.000Z",
+        "latitudeDeg": -23.092113,
+        "longitudeDeg": 63.62542,
+        "altitudeKm": 426.299
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:48:00.000Z",
+        "latitudeDeg": -11.504692,
+        "longitudeDeg": 63.469048,
+        "altitudeKm": 424.807
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:51:00.000Z",
+        "latitudeDeg": 0.090787,
+        "longitudeDeg": 63.26521,
+        "altitudeKm": 422.991
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:54:00.000Z",
+        "latitudeDeg": 11.692921,
+        "longitudeDeg": 63.062054,
+        "altitudeKm": 420.909
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T13:57:00.000Z",
+        "latitudeDeg": 23.30002,
+        "longitudeDeg": 62.908012,
+        "altitudeKm": 418.663
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:00:00.000Z",
+        "latitudeDeg": 34.90976,
+        "longitudeDeg": 62.87055,
+        "altitudeKm": 416.389
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:03:00.000Z",
+        "latitudeDeg": 46.518375,
+        "longitudeDeg": 63.072906,
+        "altitudeKm": 414.249
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:06:00.000Z",
+        "latitudeDeg": 58.118176,
+        "longitudeDeg": 63.803673,
+        "altitudeKm": 412.408
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:09:00.000Z",
+        "latitudeDeg": 69.68637,
+        "longitudeDeg": 65.99317,
+        "altitudeKm": 411.019
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:12:00.000Z",
+        "latitudeDeg": 81.086914,
+        "longitudeDeg": 75.31948,
+        "altitudeKm": 410.203
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:15:00.000Z",
+        "latitudeDeg": 85.88089,
+        "longitudeDeg": -163.19937,
+        "altitudeKm": 410.03
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:18:00.000Z",
+        "latitudeDeg": 74.99195,
+        "longitudeDeg": -133.54836,
+        "altitudeKm": 410.515
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:21:00.000Z",
+        "latitudeDeg": 63.463223,
+        "longitudeDeg": -129.63446,
+        "altitudeKm": 411.615
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:24:00.000Z",
+        "latitudeDeg": 51.872784,
+        "longitudeDeg": -128.43208,
+        "altitudeKm": 413.23
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:27:00.000Z",
+        "latitudeDeg": 40.266373,
+        "longitudeDeg": -128.04056,
+        "altitudeKm": 415.224
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:30:00.000Z",
+        "latitudeDeg": 28.655983,
+        "longitudeDeg": -127.98853,
+        "altitudeKm": 417.433
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:33:00.000Z",
+        "latitudeDeg": 17.046692,
+        "longitudeDeg": -128.09926,
+        "altitudeKm": 419.695
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:36:00.000Z",
+        "latitudeDeg": 5.441362,
+        "longitudeDeg": -128.28636,
+        "altitudeKm": 421.859
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:39:00.000Z",
+        "latitudeDeg": -6.15805,
+        "longitudeDeg": -128.49548,
+        "altitudeKm": 423.808
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:42:00.000Z",
+        "latitudeDeg": -17.750021,
+        "longitudeDeg": -128.68034,
+        "altitudeKm": 425.462
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:45:00.000Z",
+        "latitudeDeg": -29.333132,
+        "longitudeDeg": -128.7858,
+        "altitudeKm": 426.787
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:48:00.000Z",
+        "latitudeDeg": -40.905544,
+        "longitudeDeg": -128.72331,
+        "altitudeKm": 427.786
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:51:00.000Z",
+        "latitudeDeg": -52.463593,
+        "longitudeDeg": -128.3101,
+        "altitudeKm": 428.493
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:54:00.000Z",
+        "latitudeDeg": -63.996742,
+        "longitudeDeg": -127.05342,
+        "altitudeKm": 428.957
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T14:57:00.000Z",
+        "latitudeDeg": -75.45858,
+        "longitudeDeg": -122.9267,
+        "altitudeKm": 429.227
+      },
+      {
+        "satelliteId": "swarma",
+        "timestampIso": "2026-03-20T15:00:00.000Z",
+        "latitudeDeg": -86.18294,
+        "longitudeDeg": -89.61765,
+        "altitudeKm": 429.346
+      }
+    ]
+  }
+]

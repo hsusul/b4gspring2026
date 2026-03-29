@@ -1,0 +1,3526 @@
+{
+  "experiments": [
+    {
+      "id": "orbital_only",
+      "label": "Orbital geometry only",
+      "featureCount": 12,
+      "metrics": {
+        "silhouette": 0.802829,
+        "daviesBouldin": 0.613608,
+        "calinskiHarabasz": 12992.859812,
+        "validationLoss": 0.003239
+      },
+      "clusterCount": 3,
+      "crossOrbitRegimeCount": 1,
+      "regimes": [
+        {
+          "id": "regime-1",
+          "label": "Fragile LEO constellation traffic",
+          "description": "This regime is mostly LEO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0017.",
+          "satelliteCount": 14432,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 0.8087,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.7761,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-62383",
+            "norad-62392",
+            "norad-62400"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-62383",
+              "displayName": "LIZZIESAT-2 (LS-2)",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 63,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62392",
+              "displayName": "TOMORROW-S3",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 63,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62400",
+              "displayName": "XCUBE-1",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 63,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 11671,
+              "share": 0.8087
+            },
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 2708,
+              "share": 0.1876
+            },
+            {
+              "key": "Unknown",
+              "label": "Unknown",
+              "count": 43,
+              "share": 0.003
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 8,
+              "share": 0.0006
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 2,
+              "share": 0.0001
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 11201,
+              "share": 0.7761
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 2565,
+              "share": 0.1777
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 521,
+              "share": 0.0361
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 109,
+              "share": 0.0076
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 16,
+              "share": 0.0011
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 10,
+              "share": 0.0007
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 10,
+              "share": 0.0007
+            }
+          ],
+          "profile": {
+            "averageScore": 63.89,
+            "averageAnomalyScore": 0.001674,
+            "averageCongestionImpact": 12.16,
+            "averageDebrisExposure": 12.18,
+            "averageSustainability": 19.42
+          }
+        },
+        {
+          "id": "regime-2",
+          "label": "Managed GEO stewardship strain",
+          "description": "This regime is mostly GEO, skews toward communications platform, and reads comparatively calm. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.0110.",
+          "satelliteCount": 781,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "GEO",
+          "dominantOrbitShare": 0.8246,
+          "dominantMission": "communications_platform",
+          "dominantMissionShare": 0.6031,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "managed",
+          "representativeSatelliteIds": [
+            "norad-38091",
+            "norad-58582",
+            "norad-42915"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-38091",
+              "displayName": "BEIDOU-2 G5",
+              "orbitClass": "GEO",
+              "missionClass": "navigation timing",
+              "scoreTotal": 84,
+              "riskLabel": "Low"
+            },
+            {
+              "satelliteId": "norad-58582",
+              "displayName": "YAOGAN-41",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 79,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-42915",
+              "displayName": "TDRS 13",
+              "orbitClass": "GEO",
+              "missionClass": "relay comm",
+              "scoreTotal": 80,
+              "riskLabel": "Moderate"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 644,
+              "share": 0.8246
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 134,
+              "share": 0.1716
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 3,
+              "share": 0.0038
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 471,
+              "share": 0.6031
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 169,
+              "share": 0.2164
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 105,
+              "share": 0.1344
+            },
+            {
+              "key": "relay_comm",
+              "label": "relay comm",
+              "count": 19,
+              "share": 0.0243
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 8,
+              "share": 0.0102
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 6,
+              "share": 0.0077
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 2,
+              "share": 0.0026
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 1,
+              "share": 0.0013
+            }
+          ],
+          "profile": {
+            "averageScore": 81.02,
+            "averageAnomalyScore": 0.010952,
+            "averageCongestionImpact": 21.06,
+            "averageDebrisExposure": 19.93,
+            "averageSustainability": 16.95
+          }
+        },
+        {
+          "id": "regime-0",
+          "label": "Fragile Cross-orbit stewardship strain",
+          "description": "This regime is a cross-orbit mix, skews toward other mission, and looks structurally fragile. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.1240.",
+          "satelliteCount": 47,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "HEO",
+          "dominantOrbitShare": 0.6383,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.3404,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-40484",
+            "norad-40485",
+            "norad-40482"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-40484",
+              "displayName": "MMS 3",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 81,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-40485",
+              "displayName": "MMS 4",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 81,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-40482",
+              "displayName": "MMS 1",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 81,
+              "riskLabel": "Moderate"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 30,
+              "share": 0.6383
+            },
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 17,
+              "share": 0.3617
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 16,
+              "share": 0.3404
+            },
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 15,
+              "share": 0.3191
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 13,
+              "share": 0.2766
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0426
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 1,
+              "share": 0.0213
+            }
+          ],
+          "profile": {
+            "averageScore": 62.68,
+            "averageAnomalyScore": 0.123987,
+            "averageCongestionImpact": 16.85,
+            "averageDebrisExposure": 15.28,
+            "averageSustainability": 15.06
+          }
+        }
+      ],
+      "regimeSignatures": [
+        {
+          "signatureKey": "fragile|leo|congestion-impact|constellation",
+          "displayLabel": "Fragile LEO constellation traffic"
+        },
+        {
+          "signatureKey": "managed|geo|sustainability|communications_platform",
+          "displayLabel": "Managed GEO stewardship strain"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|sustainability|other_mission",
+          "displayLabel": "Fragile Cross-orbit stewardship strain"
+        }
+      ],
+      "topFragileRegime": "Fragile Cross-orbit stewardship strain",
+      "sharedPrimaryPatterns": [
+        "fragile|leo|congestion-impact|constellation"
+      ],
+      "sharedPrimaryPatternCount": 1
+    },
+    {
+      "id": "orbital_plus_traffic",
+      "label": "Orbital + traffic",
+      "featureCount": 21,
+      "metrics": {
+        "silhouette": 0.62334,
+        "daviesBouldin": 0.707567,
+        "calinskiHarabasz": 12084.649525,
+        "validationLoss": 0.002974
+      },
+      "clusterCount": 4,
+      "crossOrbitRegimeCount": 2,
+      "regimes": [
+        {
+          "id": "regime-1",
+          "label": "Fragile LEO constellation traffic",
+          "description": "This regime is mostly LEO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0003.",
+          "satelliteCount": 9675,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.8441,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-56703",
+            "norad-56136",
+            "norad-58087"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-56703",
+              "displayName": "STARLINK-30132",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 65,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-56136",
+              "displayName": "STARLINK-5489",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 65,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-58087",
+              "displayName": "STARLINK-30557",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 65,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 9675,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 8167,
+              "share": 0.8441
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 1318,
+              "share": 0.1362
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 145,
+              "share": 0.015
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 39,
+              "share": 0.004
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 4,
+              "share": 0.0004
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 2,
+              "share": 0.0002
+            }
+          ],
+          "profile": {
+            "averageScore": 63.34,
+            "averageAnomalyScore": 0.000343,
+            "averageCongestionImpact": 11.74,
+            "averageDebrisExposure": 11.95,
+            "averageSustainability": 19.74
+          }
+        },
+        {
+          "id": "regime-0",
+          "label": "Fragile Cross-orbit constellation traffic",
+          "description": "This regime is a cross-orbit mix, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0030.",
+          "satelliteCount": 4668,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "SSO",
+          "dominantOrbitShare": 0.5799,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.6431,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-55965",
+            "norad-64369",
+            "norad-64432"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-55965",
+              "displayName": "STARLINK-5894",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-64369",
+              "displayName": "STARLINK-34444",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-64432",
+              "displayName": "STARLINK-34506",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 2707,
+              "share": 0.5799
+            },
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 1961,
+              "share": 0.4201
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 3002,
+              "share": 0.6431
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 1212,
+              "share": 0.2596
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 358,
+              "share": 0.0767
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 70,
+              "share": 0.015
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 10,
+              "share": 0.0021
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 10,
+              "share": 0.0021
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 6,
+              "share": 0.0013
+            }
+          ],
+          "profile": {
+            "averageScore": 64.99,
+            "averageAnomalyScore": 0.003016,
+            "averageCongestionImpact": 12.97,
+            "averageDebrisExposure": 12.6,
+            "averageSustainability": 18.8
+          }
+        },
+        {
+          "id": "regime-2",
+          "label": "Working GEO stewardship strain",
+          "description": "This regime is mostly GEO, skews toward communications platform, and sits in a middle-pressure band. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.0128.",
+          "satelliteCount": 865,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "GEO",
+          "dominantOrbitShare": 0.7445,
+          "dominantMission": "communications_platform",
+          "dominantMissionShare": 0.5445,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "working",
+          "representativeSatelliteIds": [
+            "norad-49062",
+            "norad-41729",
+            "norad-44333"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-49062",
+              "displayName": "ZHONGXING-2E",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 83,
+              "riskLabel": "Low"
+            },
+            {
+              "satelliteId": "norad-41729",
+              "displayName": "JCSAT-16",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 83,
+              "riskLabel": "Low"
+            },
+            {
+              "satelliteId": "norad-44333",
+              "displayName": "AT&T T-16",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 83,
+              "riskLabel": "Low"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 644,
+              "share": 0.7445
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 136,
+              "share": 0.1572
+            },
+            {
+              "key": "Unknown",
+              "label": "Unknown",
+              "count": 43,
+              "share": 0.0497
+            },
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 35,
+              "share": 0.0405
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 6,
+              "share": 0.0069
+            },
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1,
+              "share": 0.0012
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 471,
+              "share": 0.5445
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 169,
+              "share": 0.1954
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 123,
+              "share": 0.1422
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 33,
+              "share": 0.0382
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 31,
+              "share": 0.0358
+            },
+            {
+              "key": "relay_comm",
+              "label": "relay comm",
+              "count": 19,
+              "share": 0.022
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 8,
+              "share": 0.0092
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 6,
+              "share": 0.0069
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 4,
+              "share": 0.0046
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 1,
+              "share": 0.0012
+            }
+          ],
+          "profile": {
+            "averageScore": 79.53,
+            "averageAnomalyScore": 0.012764,
+            "averageCongestionImpact": 20.45,
+            "averageDebrisExposure": 19.45,
+            "averageSustainability": 17.07
+          }
+        },
+        {
+          "id": "regime-3",
+          "label": "Fragile Cross-orbit debris pressure",
+          "description": "This regime is a cross-orbit mix, skews toward other mission, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.1865.",
+          "satelliteCount": 52,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "HEO",
+          "dominantOrbitShare": 0.6731,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.3846,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-52145",
+            "norad-42941",
+            "norad-58584"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-52145",
+              "displayName": "MERIDIAN 10",
+              "orbitClass": "HEO",
+              "missionClass": "other mission",
+              "scoreTotal": 53,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-42941",
+              "displayName": "USA 278",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 52,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-58584",
+              "displayName": "ARKTIKA-M 2",
+              "orbitClass": "HEO",
+              "missionClass": "other mission",
+              "scoreTotal": 53,
+              "riskLabel": "Critical"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 35,
+              "share": 0.6731
+            },
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 17,
+              "share": 0.3269
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 20,
+              "share": 0.3846
+            },
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 15,
+              "share": 0.2885
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 13,
+              "share": 0.25
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0385
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 1,
+              "share": 0.0192
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 1,
+              "share": 0.0192
+            }
+          ],
+          "profile": {
+            "averageScore": 61.79,
+            "averageAnomalyScore": 0.18647,
+            "averageCongestionImpact": 16.63,
+            "averageDebrisExposure": 14.96,
+            "averageSustainability": 15.02
+          }
+        }
+      ],
+      "regimeSignatures": [
+        {
+          "signatureKey": "fragile|leo|congestion-impact|constellation",
+          "displayLabel": "Fragile LEO constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|debris-exposure|constellation",
+          "displayLabel": "Fragile Cross-orbit constellation traffic"
+        },
+        {
+          "signatureKey": "working|geo|sustainability|communications_platform",
+          "displayLabel": "Working GEO stewardship strain"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|debris-exposure|other_mission",
+          "displayLabel": "Fragile Cross-orbit debris pressure"
+        }
+      ],
+      "topFragileRegime": "Fragile Cross-orbit debris pressure",
+      "sharedPrimaryPatterns": [
+        "fragile|cross_orbit|debris-exposure|other_mission",
+        "fragile|leo|congestion-impact|constellation",
+        "working|geo|sustainability|communications_platform"
+      ],
+      "sharedPrimaryPatternCount": 3
+    },
+    {
+      "id": "orbital_traffic_debris",
+      "label": "Orbital + traffic + debris",
+      "featureCount": 23,
+      "metrics": {
+        "silhouette": 0.633396,
+        "daviesBouldin": 0.74632,
+        "calinskiHarabasz": 10525.768901,
+        "validationLoss": 0.003934
+      },
+      "clusterCount": 6,
+      "crossOrbitRegimeCount": 2,
+      "regimes": [
+        {
+          "id": "regime-1",
+          "label": "Fragile LEO constellation traffic",
+          "description": "This regime is mostly LEO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0003.",
+          "satelliteCount": 9417,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.8618,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-64515",
+            "norad-53895",
+            "norad-53782"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-64515",
+              "displayName": "KUIPER-00055",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-53895",
+              "displayName": "STARLINK-5032",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-53782",
+              "displayName": "STARLINK-4679",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 9417,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 8116,
+              "share": 0.8618
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 1129,
+              "share": 0.1199
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 138,
+              "share": 0.0147
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 31,
+              "share": 0.0033
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0002
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 1,
+              "share": 0.0001
+            }
+          ],
+          "profile": {
+            "averageScore": 63.46,
+            "averageAnomalyScore": 0.000261,
+            "averageCongestionImpact": 11.79,
+            "averageDebrisExposure": 11.98,
+            "averageSustainability": 19.76
+          }
+        },
+        {
+          "id": "regime-2",
+          "label": "Fragile Cross-orbit constellation traffic",
+          "description": "This regime is a cross-orbit mix, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0011.",
+          "satelliteCount": 2862,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 0.5765,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.7058,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-49157",
+            "norad-46691",
+            "norad-68167"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-49157",
+              "displayName": "STARLINK-3051",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 66,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-46691",
+              "displayName": "STARLINK-1790",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 61,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-68167",
+              "displayName": "STARLINK-36969",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 62,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 1650,
+              "share": 0.5765
+            },
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1212,
+              "share": 0.4235
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 2020,
+              "share": 0.7058
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 571,
+              "share": 0.1995
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 218,
+              "share": 0.0762
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 37,
+              "share": 0.0129
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 10,
+              "share": 0.0035
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 6,
+              "share": 0.0021
+            }
+          ],
+          "profile": {
+            "averageScore": 63.2,
+            "averageAnomalyScore": 0.001078,
+            "averageCongestionImpact": 12.04,
+            "averageDebrisExposure": 11.44,
+            "averageSustainability": 19.16
+          }
+        },
+        {
+          "id": "regime-4",
+          "label": "Fragile SSO constellation traffic",
+          "description": "This regime is mostly SSO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0050.",
+          "satelliteCount": 1490,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "SSO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.5624,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-61563",
+            "norad-61565",
+            "norad-60393"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-61563",
+              "displayName": "QIANFAN-30",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-61565",
+              "displayName": "QIANFAN-32",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-60393",
+              "displayName": "QIANFAN-15",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1490,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 838,
+              "share": 0.5624
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 512,
+              "share": 0.3436
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 88,
+              "share": 0.0591
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 39,
+              "share": 0.0262
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 10,
+              "share": 0.0067
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0013
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 1,
+              "share": 0.0007
+            }
+          ],
+          "profile": {
+            "averageScore": 66.77,
+            "averageAnomalyScore": 0.005034,
+            "averageCongestionImpact": 13.63,
+            "averageDebrisExposure": 14.04,
+            "averageSustainability": 18.04
+          }
+        },
+        {
+          "id": "regime-3",
+          "label": "Managed GEO stewardship strain",
+          "description": "This regime is mostly GEO, skews toward communications platform, and reads comparatively calm. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.0122.",
+          "satelliteCount": 782,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "GEO",
+          "dominantOrbitShare": 0.8235,
+          "dominantMission": "communications_platform",
+          "dominantMissionShare": 0.6023,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "managed",
+          "representativeSatelliteIds": [
+            "norad-47237",
+            "norad-40374",
+            "norad-63361"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-47237",
+              "displayName": "USA 311",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 78,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-40374",
+              "displayName": "MUOS-3",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 80,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-63361",
+              "displayName": "TIANLIAN 2-04",
+              "orbitClass": "GEO",
+              "missionClass": "relay comm",
+              "scoreTotal": 81,
+              "riskLabel": "Moderate"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 644,
+              "share": 0.8235
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 135,
+              "share": 0.1726
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 3,
+              "share": 0.0038
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 471,
+              "share": 0.6023
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 169,
+              "share": 0.2161
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 105,
+              "share": 0.1343
+            },
+            {
+              "key": "relay_comm",
+              "label": "relay comm",
+              "count": 19,
+              "share": 0.0243
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 8,
+              "share": 0.0102
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 6,
+              "share": 0.0077
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 3,
+              "share": 0.0038
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 1,
+              "share": 0.0013
+            }
+          ],
+          "profile": {
+            "averageScore": 81.0,
+            "averageAnomalyScore": 0.01221,
+            "averageCongestionImpact": 21.06,
+            "averageDebrisExposure": 19.92,
+            "averageSustainability": 16.95
+          }
+        },
+        {
+          "id": "regime-5",
+          "label": "Fragile LEO debris pressure",
+          "description": "This regime is mostly LEO, skews toward other mission, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0246.",
+          "satelliteCount": 660,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 0.9152,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.5303,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-58500",
+            "norad-65123",
+            "norad-65125"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-58500",
+              "displayName": "DOORY-SAT",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 66,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-65123",
+              "displayName": "GEESAT-4 05",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 66,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-65125",
+              "displayName": "GEESAT-4 07",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 66,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 604,
+              "share": 0.9152
+            },
+            {
+              "key": "Unknown",
+              "label": "Unknown",
+              "count": 43,
+              "share": 0.0652
+            },
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 6,
+              "share": 0.0091
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 6,
+              "share": 0.0091
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 1,
+              "share": 0.0015
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 350,
+              "share": 0.5303
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 227,
+              "share": 0.3439
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 77,
+              "share": 0.1167
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 4,
+              "share": 0.0061
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 2,
+              "share": 0.003
+            }
+          ],
+          "profile": {
+            "averageScore": 66.37,
+            "averageAnomalyScore": 0.024579,
+            "averageCongestionImpact": 14.55,
+            "averageDebrisExposure": 14.12,
+            "averageSustainability": 18.93
+          }
+        },
+        {
+          "id": "regime-0",
+          "label": "Fragile Cross-orbit stewardship strain",
+          "description": "This regime is a cross-orbit mix, skews toward other mission, and looks structurally fragile. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.2069.",
+          "satelliteCount": 49,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "HEO",
+          "dominantOrbitShare": 0.6531,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.3673,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-25034",
+            "norad-49503",
+            "norad-44552"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-25034",
+              "displayName": "USA 136",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 49,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-49503",
+              "displayName": "COSMOS 2552",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 52,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-44552",
+              "displayName": "COSMOS 2541",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 52,
+              "riskLabel": "Critical"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 32,
+              "share": 0.6531
+            },
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 17,
+              "share": 0.3469
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 18,
+              "share": 0.3673
+            },
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 15,
+              "share": 0.3061
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 13,
+              "share": 0.2653
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0408
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 1,
+              "share": 0.0204
+            }
+          ],
+          "profile": {
+            "averageScore": 62.27,
+            "averageAnomalyScore": 0.206901,
+            "averageCongestionImpact": 16.76,
+            "averageDebrisExposure": 15.14,
+            "averageSustainability": 15.02
+          }
+        }
+      ],
+      "regimeSignatures": [
+        {
+          "signatureKey": "fragile|leo|congestion-impact|constellation",
+          "displayLabel": "Fragile LEO constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|debris-exposure|constellation",
+          "displayLabel": "Fragile Cross-orbit constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|sso|congestion-impact|constellation",
+          "displayLabel": "Fragile SSO constellation traffic"
+        },
+        {
+          "signatureKey": "managed|geo|sustainability|communications_platform",
+          "displayLabel": "Managed GEO stewardship strain"
+        },
+        {
+          "signatureKey": "fragile|leo|debris-exposure|other_mission",
+          "displayLabel": "Fragile LEO debris pressure"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|sustainability|other_mission",
+          "displayLabel": "Fragile Cross-orbit stewardship strain"
+        }
+      ],
+      "topFragileRegime": "Fragile Cross-orbit stewardship strain",
+      "sharedPrimaryPatterns": [
+        "fragile|leo|congestion-impact|constellation"
+      ],
+      "sharedPrimaryPatternCount": 1
+    },
+    {
+      "id": "direct_derived_only",
+      "label": "Direct + derived only",
+      "featureCount": 29,
+      "metrics": {
+        "silhouette": 0.608468,
+        "daviesBouldin": 0.894542,
+        "calinskiHarabasz": 10076.740672,
+        "validationLoss": 0.005741
+      },
+      "clusterCount": 6,
+      "crossOrbitRegimeCount": 2,
+      "regimes": [
+        {
+          "id": "regime-1",
+          "label": "Fragile LEO constellation traffic",
+          "description": "This regime is mostly LEO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0007.",
+          "satelliteCount": 7866,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.9617,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-65774",
+            "norad-63745",
+            "norad-67144"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-65774",
+              "displayName": "KUIPER-00155",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-63745",
+              "displayName": "KUIPER-00032",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-67144",
+              "displayName": "KUIPER-00196",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 7866,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 7565,
+              "share": 0.9617
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 187,
+              "share": 0.0238
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 113,
+              "share": 0.0144
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 1,
+              "share": 0.0001
+            }
+          ],
+          "profile": {
+            "averageScore": 63.94,
+            "averageAnomalyScore": 0.000682,
+            "averageCongestionImpact": 12.01,
+            "averageDebrisExposure": 11.98,
+            "averageSustainability": 19.86
+          }
+        },
+        {
+          "id": "regime-0",
+          "label": "Fragile Cross-orbit constellation traffic",
+          "description": "This regime is a cross-orbit mix, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0015.",
+          "satelliteCount": 2461,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 0.5847,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.8623,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-62175",
+            "norad-62165",
+            "norad-62170"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-62175",
+              "displayName": "STARLINK-32534",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62165",
+              "displayName": "STARLINK-32523",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62170",
+              "displayName": "STARLINK-32538",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 1439,
+              "share": 0.5847
+            },
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1022,
+              "share": 0.4153
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 2122,
+              "share": 0.8623
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 198,
+              "share": 0.0805
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 128,
+              "share": 0.052
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 9,
+              "share": 0.0037
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 4,
+              "share": 0.0016
+            }
+          ],
+          "profile": {
+            "averageScore": 64.1,
+            "averageAnomalyScore": 0.001479,
+            "averageCongestionImpact": 12.33,
+            "averageDebrisExposure": 11.62,
+            "averageSustainability": 19.33
+          }
+        },
+        {
+          "id": "regime-4",
+          "label": "Fragile SSO debris pressure",
+          "description": "This regime is mostly SSO, skews toward other mission, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0127.",
+          "satelliteCount": 2116,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "SSO",
+          "dominantOrbitShare": 0.7963,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.4712,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-48968",
+            "norad-49312",
+            "norad-49200"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-48968",
+              "displayName": "ONEWEB-0250",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-49312",
+              "displayName": "ONEWEB-0386",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-49200",
+              "displayName": "ONEWEB-0334",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1685,
+              "share": 0.7963
+            },
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 431,
+              "share": 0.2037
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 997,
+              "share": 0.4712
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 908,
+              "share": 0.4291
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 154,
+              "share": 0.0728
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 44,
+              "share": 0.0208
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 10,
+              "share": 0.0047
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0009
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 1,
+              "share": 0.0005
+            }
+          ],
+          "profile": {
+            "averageScore": 66.33,
+            "averageAnomalyScore": 0.012651,
+            "averageCongestionImpact": 13.88,
+            "averageDebrisExposure": 13.84,
+            "averageSustainability": 18.16
+          }
+        },
+        {
+          "id": "regime-3",
+          "label": "Fragile LEO crowding pressure",
+          "description": "This regime is mostly LEO, skews toward other mission, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0084.",
+          "satelliteCount": 1930,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.6311,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-58297",
+            "norad-51445",
+            "norad-60579"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-58297",
+              "displayName": "UMBRA-07",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 61,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-51445",
+              "displayName": "USA 326",
+              "orbitClass": "LEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 61,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-60579",
+              "displayName": "LEMUR-2-SIERRINI",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 61,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 1930,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 1218,
+              "share": 0.6311
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 602,
+              "share": 0.3119
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 64,
+              "share": 0.0332
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 40,
+              "share": 0.0207
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 4,
+              "share": 0.0021
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 2,
+              "share": 0.001
+            }
+          ],
+          "profile": {
+            "averageScore": 60.72,
+            "averageAnomalyScore": 0.008425,
+            "averageCongestionImpact": 10.57,
+            "averageDebrisExposure": 11.83,
+            "averageSustainability": 19.22
+          }
+        },
+        {
+          "id": "regime-2",
+          "label": "Managed GEO stewardship strain",
+          "description": "This regime is mostly GEO, skews toward communications platform, and reads comparatively calm. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.0249.",
+          "satelliteCount": 817,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "GEO",
+          "dominantOrbitShare": 0.7834,
+          "dominantMission": "communications_platform",
+          "dominantMissionShare": 0.5741,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "managed",
+          "representativeSatelliteIds": [
+            "norad-48618",
+            "norad-41744",
+            "norad-52940"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-48618",
+              "displayName": "SBIRS GEO-5 (USA 315)",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 81,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-41744",
+              "displayName": "USA 270",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 82,
+              "riskLabel": "Low"
+            },
+            {
+              "satelliteId": "norad-52940",
+              "displayName": "WFOV (USA 332)",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 82,
+              "riskLabel": "Low"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 640,
+              "share": 0.7834
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 131,
+              "share": 0.1603
+            },
+            {
+              "key": "Unknown",
+              "label": "Unknown",
+              "count": 43,
+              "share": 0.0526
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 3,
+              "share": 0.0037
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 469,
+              "share": 0.5741
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 166,
+              "share": 0.2032
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 117,
+              "share": 0.1432
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 27,
+              "share": 0.033
+            },
+            {
+              "key": "relay_comm",
+              "label": "relay comm",
+              "count": 19,
+              "share": 0.0233
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 8,
+              "share": 0.0098
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 6,
+              "share": 0.0073
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 4,
+              "share": 0.0049
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 1,
+              "share": 0.0012
+            }
+          ],
+          "profile": {
+            "averageScore": 80.23,
+            "averageAnomalyScore": 0.024938,
+            "averageCongestionImpact": 20.74,
+            "averageDebrisExposure": 19.72,
+            "averageSustainability": 17.01
+          }
+        },
+        {
+          "id": "regime-5",
+          "label": "Fragile Cross-orbit stewardship strain",
+          "description": "This regime is a cross-orbit mix, skews toward other mission, and looks structurally fragile. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.1950.",
+          "satelliteCount": 70,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "HEO",
+          "dominantOrbitShare": 0.5429,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.3714,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-37191",
+            "norad-43340",
+            "norad-64289"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-37191",
+              "displayName": "GLOBALSTAR M077",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 68,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-43340",
+              "displayName": "USA 284",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 80,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-64289",
+              "displayName": "USA 546",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 81,
+              "riskLabel": "Moderate"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 38,
+              "share": 0.5429
+            },
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 21,
+              "share": 0.3
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 5,
+              "share": 0.0714
+            },
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 5,
+              "share": 0.0714
+            },
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1,
+              "share": 0.0143
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 26,
+              "share": 0.3714
+            },
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 17,
+              "share": 0.2429
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 17,
+              "share": 0.2429
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 4,
+              "share": 0.0571
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 4,
+              "share": 0.0571
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0286
+            }
+          ],
+          "profile": {
+            "averageScore": 63.61,
+            "averageAnomalyScore": 0.19504,
+            "averageCongestionImpact": 16.94,
+            "averageDebrisExposure": 15.36,
+            "averageSustainability": 15.27
+          }
+        }
+      ],
+      "regimeSignatures": [
+        {
+          "signatureKey": "fragile|leo|debris-exposure|constellation",
+          "displayLabel": "Fragile LEO constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|debris-exposure|constellation",
+          "displayLabel": "Fragile Cross-orbit constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|sso|debris-exposure|other_mission",
+          "displayLabel": "Fragile SSO debris pressure"
+        },
+        {
+          "signatureKey": "fragile|leo|congestion-impact|other_mission",
+          "displayLabel": "Fragile LEO crowding pressure"
+        },
+        {
+          "signatureKey": "managed|geo|sustainability|communications_platform",
+          "displayLabel": "Managed GEO stewardship strain"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|sustainability|other_mission",
+          "displayLabel": "Fragile Cross-orbit stewardship strain"
+        }
+      ],
+      "topFragileRegime": "Fragile LEO crowding pressure",
+      "sharedPrimaryPatterns": [
+        "fragile|leo|congestion-impact|other_mission"
+      ],
+      "sharedPrimaryPatternCount": 1
+    },
+    {
+      "id": "without_stewardship_proxies",
+      "label": "Without stewardship proxies",
+      "featureCount": 42,
+      "metrics": {
+        "silhouette": 0.564805,
+        "daviesBouldin": 0.93395,
+        "calinskiHarabasz": 9615.045871,
+        "validationLoss": 0.006454
+      },
+      "clusterCount": 6,
+      "crossOrbitRegimeCount": 2,
+      "regimes": [
+        {
+          "id": "regime-0",
+          "label": "Fragile LEO constellation traffic",
+          "description": "This regime is mostly LEO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0010.",
+          "satelliteCount": 9406,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.996,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-60330",
+            "norad-58711",
+            "norad-59208"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-60330",
+              "displayName": "STARLINK-32153",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-58711",
+              "displayName": "STARLINK-31031",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-59208",
+              "displayName": "STARLINK-31576",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 9406,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 9368,
+              "share": 0.996
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 38,
+              "share": 0.004
+            }
+          ],
+          "profile": {
+            "averageScore": 63.6,
+            "averageAnomalyScore": 0.001016,
+            "averageCongestionImpact": 11.68,
+            "averageDebrisExposure": 11.85,
+            "averageSustainability": 19.9
+          }
+        },
+        {
+          "id": "regime-3",
+          "label": "Fragile Cross-orbit constellation traffic",
+          "description": "This regime is a cross-orbit mix, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0118.",
+          "satelliteCount": 2015,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "SSO",
+          "dominantOrbitShare": 0.7017,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.4878,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-47271",
+            "norad-47287",
+            "norad-47258"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-47271",
+              "displayName": "ONEWEB-0125",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-47287",
+              "displayName": "ONEWEB-0141",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-47258",
+              "displayName": "ONEWEB-0102",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1414,
+              "share": 0.7017
+            },
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 601,
+              "share": 0.2983
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 983,
+              "share": 0.4878
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 831,
+              "share": 0.4124
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 148,
+              "share": 0.0734
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 40,
+              "share": 0.0199
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 10,
+              "share": 0.005
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.001
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 1,
+              "share": 0.0005
+            }
+          ],
+          "profile": {
+            "averageScore": 66.69,
+            "averageAnomalyScore": 0.011789,
+            "averageCongestionImpact": 13.92,
+            "averageDebrisExposure": 14.03,
+            "averageSustainability": 18.35
+          }
+        },
+        {
+          "id": "regime-4",
+          "label": "Fragile LEO crowding pressure",
+          "description": "This regime is mostly LEO, skews toward other mission, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0133.",
+          "satelliteCount": 1661,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.8531,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-65316",
+            "norad-65315",
+            "norad-62631"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-65316",
+              "displayName": "PELICAN-4",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 59,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-65315",
+              "displayName": "PELICAN-3",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 59,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62631",
+              "displayName": "PELICAN-2",
+              "orbitClass": "LEO",
+              "missionClass": "other mission",
+              "scoreTotal": 59,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 1661,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 1417,
+              "share": 0.8531
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 163,
+              "share": 0.0981
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 65,
+              "share": 0.0391
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 11,
+              "share": 0.0066
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 4,
+              "share": 0.0024
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 1,
+              "share": 0.0006
+            }
+          ],
+          "profile": {
+            "averageScore": 60.25,
+            "averageAnomalyScore": 0.013335,
+            "averageCongestionImpact": 11.18,
+            "averageDebrisExposure": 11.77,
+            "averageSustainability": 18.8
+          }
+        },
+        {
+          "id": "regime-5",
+          "label": "Fragile SSO constellation traffic",
+          "description": "This regime is mostly SSO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0041.",
+          "satelliteCount": 1294,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "SSO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.6546,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-62172",
+            "norad-62167",
+            "norad-62176"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-62172",
+              "displayName": "STARLINK-32407",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62167",
+              "displayName": "STARLINK-32506",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62176",
+              "displayName": "STARLINK-32516",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 1294,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 847,
+              "share": 0.6546
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 245,
+              "share": 0.1893
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 194,
+              "share": 0.1499
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 4,
+              "share": 0.0031
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 4,
+              "share": 0.0031
+            }
+          ],
+          "profile": {
+            "averageScore": 66.23,
+            "averageAnomalyScore": 0.004126,
+            "averageCongestionImpact": 14.04,
+            "averageDebrisExposure": 12.13,
+            "averageSustainability": 18.52
+          }
+        },
+        {
+          "id": "regime-1",
+          "label": "Managed GEO stewardship strain",
+          "description": "This regime is mostly GEO, skews toward communications platform, and reads comparatively calm. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.0272.",
+          "satelliteCount": 821,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "GEO",
+          "dominantOrbitShare": 0.7795,
+          "dominantMission": "communications_platform",
+          "dominantMissionShare": 0.5713,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "managed",
+          "representativeSatelliteIds": [
+            "norad-43651",
+            "norad-40208",
+            "norad-51281"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-43651",
+              "displayName": "AEHF-4 (USA 288)",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 78,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-40208",
+              "displayName": "USA 257 (CLIO)",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 78,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-51281",
+              "displayName": "USA 325",
+              "orbitClass": "GEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 79,
+              "riskLabel": "Moderate"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 640,
+              "share": 0.7795
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 135,
+              "share": 0.1644
+            },
+            {
+              "key": "Unknown",
+              "label": "Unknown",
+              "count": 43,
+              "share": 0.0524
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 3,
+              "share": 0.0037
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 469,
+              "share": 0.5713
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 169,
+              "share": 0.2058
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 118,
+              "share": 0.1437
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 27,
+              "share": 0.0329
+            },
+            {
+              "key": "relay_comm",
+              "label": "relay comm",
+              "count": 19,
+              "share": 0.0231
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 8,
+              "share": 0.0097
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 6,
+              "share": 0.0073
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 4,
+              "share": 0.0049
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 1,
+              "share": 0.0012
+            }
+          ],
+          "profile": {
+            "averageScore": 80.22,
+            "averageAnomalyScore": 0.027209,
+            "averageCongestionImpact": 20.74,
+            "averageDebrisExposure": 19.71,
+            "averageSustainability": 17.01
+          }
+        },
+        {
+          "id": "regime-2",
+          "label": "Fragile Cross-orbit stewardship strain",
+          "description": "This regime is a cross-orbit mix, skews toward other mission, and looks structurally fragile. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.1496.",
+          "satelliteCount": 63,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "HEO",
+          "dominantOrbitShare": 0.6032,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.3968,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-29249",
+            "norad-25034",
+            "norad-42941"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-29249",
+              "displayName": "USA 184",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 51,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-25034",
+              "displayName": "USA 136",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 49,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-42941",
+              "displayName": "USA 278",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 52,
+              "riskLabel": "Critical"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 38,
+              "share": 0.6032
+            },
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 21,
+              "share": 0.3333
+            },
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 3,
+              "share": 0.0476
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 1,
+              "share": 0.0159
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 25,
+              "share": 0.3968
+            },
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 17,
+              "share": 0.2698
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 16,
+              "share": 0.254
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0317
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 2,
+              "share": 0.0317
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 1,
+              "share": 0.0159
+            }
+          ],
+          "profile": {
+            "averageScore": 62.52,
+            "averageAnomalyScore": 0.149569,
+            "averageCongestionImpact": 16.83,
+            "averageDebrisExposure": 15.21,
+            "averageSustainability": 15.06
+          }
+        }
+      ],
+      "regimeSignatures": [
+        {
+          "signatureKey": "fragile|leo|congestion-impact|constellation",
+          "displayLabel": "Fragile LEO constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|congestion-impact|constellation",
+          "displayLabel": "Fragile Cross-orbit constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|leo|congestion-impact|other_mission",
+          "displayLabel": "Fragile LEO crowding pressure"
+        },
+        {
+          "signatureKey": "fragile|sso|debris-exposure|constellation",
+          "displayLabel": "Fragile SSO constellation traffic"
+        },
+        {
+          "signatureKey": "managed|geo|sustainability|communications_platform",
+          "displayLabel": "Managed GEO stewardship strain"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|sustainability|other_mission",
+          "displayLabel": "Fragile Cross-orbit stewardship strain"
+        }
+      ],
+      "topFragileRegime": "Fragile LEO crowding pressure",
+      "sharedPrimaryPatterns": [
+        "fragile|leo|congestion-impact|constellation",
+        "fragile|leo|congestion-impact|other_mission",
+        "fragile|sso|debris-exposure|constellation"
+      ],
+      "sharedPrimaryPatternCount": 3
+    },
+    {
+      "id": "without_mission_operator_context",
+      "label": "Without mission/operator context",
+      "featureCount": 33,
+      "metrics": {
+        "silhouette": 0.57544,
+        "daviesBouldin": 0.779354,
+        "calinskiHarabasz": 9707.774307,
+        "validationLoss": 0.004472
+      },
+      "clusterCount": 5,
+      "crossOrbitRegimeCount": 2,
+      "regimes": [
+        {
+          "id": "regime-1",
+          "label": "Fragile LEO constellation traffic",
+          "description": "This regime is mostly LEO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is shared traffic pressure, with an average anomaly score of 0.0010.",
+          "satelliteCount": 11045,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.8483,
+          "weakestFactorKey": "congestion-impact",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-65774",
+            "norad-67133",
+            "norad-67145"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-65774",
+              "displayName": "KUIPER-00155",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-67133",
+              "displayName": "KUIPER-00144",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-67145",
+              "displayName": "KUIPER-00204",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 64,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 11045,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 9369,
+              "share": 0.8483
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 1441,
+              "share": 0.1305
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 161,
+              "share": 0.0146
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 65,
+              "share": 0.0059
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 5,
+              "share": 0.0005
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 4,
+              "share": 0.0004
+            }
+          ],
+          "profile": {
+            "averageScore": 63.11,
+            "averageAnomalyScore": 0.000996,
+            "averageCongestionImpact": 11.6,
+            "averageDebrisExposure": 11.84,
+            "averageSustainability": 19.74
+          }
+        },
+        {
+          "id": "regime-3",
+          "label": "Fragile SSO constellation traffic",
+          "description": "This regime is mostly SSO, skews toward communications constellation, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0028.",
+          "satelliteCount": 2411,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "SSO",
+          "dominantOrbitShare": 1.0,
+          "dominantMission": "communications_constellation",
+          "dominantMissionShare": 0.6649,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-67081",
+            "norad-62175",
+            "norad-64316"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-67081",
+              "displayName": "STARLINK-35864",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-62175",
+              "displayName": "STARLINK-32534",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-64316",
+              "displayName": "STARLINK-33590",
+              "orbitClass": "SSO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 67,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 2411,
+              "share": 1.0
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 1603,
+              "share": 0.6649
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 553,
+              "share": 0.2294
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 214,
+              "share": 0.0888
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 36,
+              "share": 0.0149
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 4,
+              "share": 0.0017
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 1,
+              "share": 0.0004
+            }
+          ],
+          "profile": {
+            "averageScore": 66.65,
+            "averageAnomalyScore": 0.002833,
+            "averageCongestionImpact": 13.73,
+            "averageDebrisExposure": 13.01,
+            "averageSustainability": 18.38
+          }
+        },
+        {
+          "id": "regime-0",
+          "label": "Fragile Cross-orbit debris pressure",
+          "description": "This regime is a cross-orbit mix, skews toward other mission, and looks structurally fragile. Its weakest shared signal is debris exposure, with an average anomaly score of 0.0195.",
+          "satelliteCount": 966,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "LEO",
+          "dominantOrbitShare": 0.646,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.5828,
+          "weakestFactorKey": "debris-exposure",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-64510",
+            "norad-64509",
+            "norad-63734"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-64510",
+              "displayName": "KUIPER-00050",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 69,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-64509",
+              "displayName": "KUIPER-00049",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 69,
+              "riskLabel": "Elevated"
+            },
+            {
+              "satelliteId": "norad-63734",
+              "displayName": "KUIPER-00019",
+              "orbitClass": "LEO",
+              "missionClass": "communications constellation",
+              "scoreTotal": 69,
+              "riskLabel": "Elevated"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 624,
+              "share": 0.646
+            },
+            {
+              "key": "SSO",
+              "label": "SSO",
+              "count": 297,
+              "share": 0.3075
+            },
+            {
+              "key": "Unknown",
+              "label": "Unknown",
+              "count": 43,
+              "share": 0.0445
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 2,
+              "share": 0.0021
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 563,
+              "share": 0.5828
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 227,
+              "share": 0.235
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 144,
+              "share": 0.1491
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 10,
+              "share": 0.0104
+            },
+            {
+              "key": "human_spaceflight",
+              "label": "human spaceflight",
+              "count": 10,
+              "share": 0.0104
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 8,
+              "share": 0.0083
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0021
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 2,
+              "share": 0.0021
+            }
+          ],
+          "profile": {
+            "averageScore": 65.89,
+            "averageAnomalyScore": 0.019461,
+            "averageCongestionImpact": 14.56,
+            "averageDebrisExposure": 14.04,
+            "averageSustainability": 18.44
+          }
+        },
+        {
+          "id": "regime-2",
+          "label": "Managed GEO stewardship strain",
+          "description": "This regime is mostly GEO, skews toward communications platform, and reads comparatively calm. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.0260.",
+          "satelliteCount": 776,
+          "cutsAcrossOrbitLabels": false,
+          "dominantOrbit": "GEO",
+          "dominantOrbitShare": 0.8247,
+          "dominantMission": "communications_platform",
+          "dominantMissionShare": 0.6044,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "managed",
+          "representativeSatelliteIds": [
+            "norad-33153",
+            "norad-31307",
+            "norad-40946"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-33153",
+              "displayName": "INTELSAT 25 (IS-25)",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 80,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-31307",
+              "displayName": "GALAXY 17 (G-17)",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 80,
+              "riskLabel": "Moderate"
+            },
+            {
+              "satelliteId": "norad-40946",
+              "displayName": "MORELOS 3",
+              "orbitClass": "GEO",
+              "missionClass": "communications platform",
+              "scoreTotal": 80,
+              "riskLabel": "Moderate"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 640,
+              "share": 0.8247
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 135,
+              "share": 0.174
+            },
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 1,
+              "share": 0.0013
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 469,
+              "share": 0.6044
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 167,
+              "share": 0.2152
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 104,
+              "share": 0.134
+            },
+            {
+              "key": "relay_comm",
+              "label": "relay comm",
+              "count": 19,
+              "share": 0.0245
+            },
+            {
+              "key": "weather_monitoring",
+              "label": "weather monitoring",
+              "count": 8,
+              "share": 0.0103
+            },
+            {
+              "key": "earth_observation",
+              "label": "earth observation",
+              "count": 6,
+              "share": 0.0077
+            },
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 2,
+              "share": 0.0026
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 1,
+              "share": 0.0013
+            }
+          ],
+          "profile": {
+            "averageScore": 81.07,
+            "averageAnomalyScore": 0.025994,
+            "averageCongestionImpact": 21.07,
+            "averageDebrisExposure": 19.94,
+            "averageSustainability": 16.95
+          }
+        },
+        {
+          "id": "regime-4",
+          "label": "Fragile Cross-orbit stewardship strain",
+          "description": "This regime is a cross-orbit mix, skews toward other mission, and looks structurally fragile. Its weakest shared signal is end-of-life stewardship, with an average anomaly score of 0.1772.",
+          "satelliteCount": 62,
+          "cutsAcrossOrbitLabels": true,
+          "dominantOrbit": "HEO",
+          "dominantOrbitShare": 0.6129,
+          "dominantMission": "other_mission",
+          "dominantMissionShare": 0.3871,
+          "weakestFactorKey": "sustainability",
+          "scoreBand": "fragile",
+          "representativeSatelliteIds": [
+            "norad-40296",
+            "norad-45254",
+            "norad-49503"
+          ],
+          "representativeSatellites": [
+            {
+              "satelliteId": "norad-40296",
+              "displayName": "MERIDIAN 7",
+              "orbitClass": "HEO",
+              "missionClass": "other mission",
+              "scoreTotal": 52,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-45254",
+              "displayName": "MERIDIAN 9",
+              "orbitClass": "HEO",
+              "missionClass": "other mission",
+              "scoreTotal": 52,
+              "riskLabel": "Critical"
+            },
+            {
+              "satelliteId": "norad-49503",
+              "displayName": "COSMOS 2552",
+              "orbitClass": "HEO",
+              "missionClass": "defense reconnaissance",
+              "scoreTotal": 52,
+              "riskLabel": "Critical"
+            }
+          ],
+          "orbitComposition": [
+            {
+              "key": "HEO",
+              "label": "HEO",
+              "count": 38,
+              "share": 0.6129
+            },
+            {
+              "key": "GEO",
+              "label": "GEO",
+              "count": 21,
+              "share": 0.3387
+            },
+            {
+              "key": "LEO",
+              "label": "LEO",
+              "count": 2,
+              "share": 0.0323
+            },
+            {
+              "key": "MEO",
+              "label": "MEO",
+              "count": 1,
+              "share": 0.0161
+            }
+          ],
+          "missionComposition": [
+            {
+              "key": "other_mission",
+              "label": "other mission",
+              "count": 24,
+              "share": 0.3871
+            },
+            {
+              "key": "communications_platform",
+              "label": "communications platform",
+              "count": 17,
+              "share": 0.2742
+            },
+            {
+              "key": "defense_reconnaissance",
+              "label": "defense reconnaissance",
+              "count": 16,
+              "share": 0.2581
+            },
+            {
+              "key": "science_mission",
+              "label": "science mission",
+              "count": 2,
+              "share": 0.0323
+            },
+            {
+              "key": "communications_constellation",
+              "label": "communications constellation",
+              "count": 2,
+              "share": 0.0323
+            },
+            {
+              "key": "navigation_timing",
+              "label": "navigation timing",
+              "count": 1,
+              "share": 0.0161
+            }
+          ],
+          "profile": {
+            "averageScore": 62.53,
+            "averageAnomalyScore": 0.177192,
+            "averageCongestionImpact": 16.85,
+            "averageDebrisExposure": 15.23,
+            "averageSustainability": 15.05
+          }
+        }
+      ],
+      "regimeSignatures": [
+        {
+          "signatureKey": "fragile|leo|congestion-impact|constellation",
+          "displayLabel": "Fragile LEO constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|sso|debris-exposure|constellation",
+          "displayLabel": "Fragile SSO constellation traffic"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|debris-exposure|other_mission",
+          "displayLabel": "Fragile Cross-orbit debris pressure"
+        },
+        {
+          "signatureKey": "managed|geo|sustainability|communications_platform",
+          "displayLabel": "Managed GEO stewardship strain"
+        },
+        {
+          "signatureKey": "fragile|cross_orbit|sustainability|other_mission",
+          "displayLabel": "Fragile Cross-orbit stewardship strain"
+        }
+      ],
+      "topFragileRegime": "Fragile Cross-orbit stewardship strain",
+      "sharedPrimaryPatterns": [
+        "fragile|cross_orbit|debris-exposure|other_mission",
+        "fragile|leo|congestion-impact|constellation",
+        "fragile|sso|debris-exposure|constellation"
+      ],
+      "sharedPrimaryPatternCount": 3
+    }
+  ],
+  "takeaways": [
+    "Cross-orbit structure already appears in the orbital-only view, but traffic and debris features make it richer and closer to the primary result.",
+    "The regime structure survives without mission/operator context, so the main finding is not just metadata clustering.",
+    "The main fragility patterns still appear when stewardship proxy inputs are removed, which makes the orbital-condition claim more defensible.",
+    "At least part of the regime structure survives on direct and derived features alone, without the proxy-heavy inputs."
+  ]
+}

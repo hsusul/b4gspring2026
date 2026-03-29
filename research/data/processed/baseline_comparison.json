@@ -1,0 +1,115 @@
+{
+  "methods": [
+    {
+      "method": "autoencoder",
+      "label": "Autoencoder embedding",
+      "trialCount": 5,
+      "clusterCount": {
+        "mean": 5.2,
+        "std": 1.16619,
+        "min": 3.0,
+        "max": 6.0
+      },
+      "silhouette": {
+        "mean": 0.588569,
+        "std": 0.01919,
+        "min": 0.554723,
+        "max": 0.608378
+      },
+      "daviesBouldin": {
+        "mean": 0.891054,
+        "std": 0.075511,
+        "min": 0.794859,
+        "max": 0.979147
+      },
+      "calinskiHarabasz": {
+        "mean": 9829.345349,
+        "std": 1598.661994,
+        "min": 8066.954423,
+        "max": 12398.363075
+      },
+      "pairwiseAriMean": 0.725701,
+      "crossOrbitPresenceRate": 0.8,
+      "outlierQuality": {
+        "narrativeSubsetShareTop25": 0.064,
+        "highMissingShareTop25": 0.936
+      }
+    },
+    {
+      "method": "raw_features_kmeans",
+      "label": "Raw standardized features",
+      "trialCount": 5,
+      "clusterCount": {
+        "mean": 6.0,
+        "std": 0.0,
+        "min": 6.0,
+        "max": 6.0
+      },
+      "silhouette": {
+        "mean": 0.491031,
+        "std": 0.001902,
+        "min": 0.487236,
+        "max": 0.492236
+      },
+      "daviesBouldin": {
+        "mean": 1.143591,
+        "std": 0.020702,
+        "min": 1.128065,
+        "max": 1.184637
+      },
+      "calinskiHarabasz": {
+        "mean": 5266.71107,
+        "std": 91.698598,
+        "min": 5083.741996,
+        "max": 5324.579616
+      },
+      "pairwiseAriMean": 0.984362,
+      "crossOrbitPresenceRate": 0.8,
+      "outlierQuality": {
+        "narrativeSubsetShareTop25": 0.0,
+        "highMissingShareTop25": 1.0
+      }
+    },
+    {
+      "method": "pca_kmeans",
+      "label": "PCA baseline",
+      "trialCount": 5,
+      "clusterCount": {
+        "mean": 6.0,
+        "std": 0.0,
+        "min": 6.0,
+        "max": 6.0
+      },
+      "silhouette": {
+        "mean": 0.566695,
+        "std": 0.000219,
+        "min": 0.566583,
+        "max": 0.567133
+      },
+      "daviesBouldin": {
+        "mean": 0.94764,
+        "std": 0.009423,
+        "min": 0.942301,
+        "max": 0.966376
+      },
+      "calinskiHarabasz": {
+        "mean": 7984.220802,
+        "std": 6.583859,
+        "min": 7980.893081,
+        "max": 7997.38805
+      },
+      "pairwiseAriMean": 0.995015,
+      "crossOrbitPresenceRate": 1.0,
+      "outlierQuality": {
+        "narrativeSubsetShareTop25": 0.16,
+        "highMissingShareTop25": 0.84
+      }
+    }
+  ],
+  "takeaways": [
+    "The cross-orbit regime is not unique to the autoencoder, so that claim should be treated as shared structure rather than purely neural discovery.",
+    "The autoencoder also yields the strongest average separation score in its own learned space.",
+    "PCA baseline is more seed-stable than the autoencoder, so the neural model should be framed as a tradeoff for structure quality rather than raw robustness.",
+    "The anomaly rankings still deserve caution because the simpler baselines are at least as clean on source-coverage behavior."
+  ]
+}
