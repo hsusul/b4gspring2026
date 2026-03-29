@@ -6,11 +6,13 @@ For the finished findings and interpretation, see [FINDINGS.md](./FINDINGS.md).
 
 ## Boundary
 
-- `src/data/narrative/**`: curated story subset used by the scrolling experience
-- `research/data/raw/**`: raw catalog pulls and broad-coverage source snapshots
-- `research/data/processed/**`: canonical records, feature matrices, and intermediate analysis tables
-- `research/artifacts/**`: model checkpoints, embeddings, clustering results, anomaly outputs
-- `src/data/research/**`: app-facing summaries exported from the research pipeline
+- `src/data/narrative/**`: curated story subset used by the scrolling experience and kept in the public repo
+- `src/data/research/**`: app-facing summaries exported from the research pipeline and kept in the public repo
+- `research/data/raw/**`: local raw catalog pulls and broad-coverage source snapshots, excluded from the public repo
+- `research/data/processed/**`: local canonical records, feature matrices, and intermediate analysis tables, excluded from the public repo
+- `research/artifacts/**`: local model checkpoints, embeddings, clustering results, and anomaly outputs, excluded from the public repo
+
+The public repository is intentionally trimmed to the code, docs, curated narrative data, and the small exported summary the app consumes. Large raw pulls and generated research outputs should be regenerated locally when needed.
 
 ## Stages
 

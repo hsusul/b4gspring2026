@@ -47,16 +47,24 @@ node scripts/setup-cesium.mjs
 
 ## Data Layers
 
-- `src/data/narrative/**`: curated story subset used by the scrolling experience
-- `research/data/raw/**`: broad-coverage source pulls for analysis
-- `research/data/processed/**`: canonical records, feature matrices, and intermediate outputs
-- `research/artifacts/**`: model checkpoints, embeddings, clustering, and anomaly outputs
-- `src/data/research/**`: app-facing research summaries exported from the pipeline
+- `src/data/narrative/**`: curated story subset used by the scrolling experience and kept in the repo
+- `src/data/research/**`: small app-facing research summaries exported from the pipeline and kept in the repo
+- `research/data/raw/**`: local raw source pulls for analysis, intentionally excluded from the public repo
+- `research/data/processed/**`: local canonical records, feature matrices, and intermediate outputs, intentionally excluded from the public repo
+- `research/artifacts/**`: local model checkpoints, embeddings, clustering, and anomaly outputs, intentionally excluded from the public repo
 
 ## Research Pipeline
 
 The research architecture lives under [research/README.md](./research/README.md).
 The finished findings summary lives under [research/FINDINGS.md](./research/FINDINGS.md).
+
+The public repo keeps only the small JSON files the story needs to run:
+
+- `src/data/narrative/story-satellites.json`
+- `src/data/narrative/story-enrichment-seed.json`
+- `src/data/research/vulnerability-regimes.json`
+
+Everything else under `research/data/**` and `research/artifacts/**` is treated as local generated workspace data and should be rebuilt on demand.
 
 Initial staged commands:
 
